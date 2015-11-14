@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#005A8C</color>
+    <color name="colorPrimaryDark">#004a73</color>
+    <color name="colorAccent">#008bd9</color>
+
+
+    <color name="greyBackground">#a6a6a6</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+
+    // Setting a transparent color, add percent value before 6 digit color code
+    //http://stackoverflow.com/questions/1492554/set-transparent-background-of-an-imageview-in-android
+    <color name="transparentBlack">#66000000</color>
+    <color name="transparentColorPrimary">#99005A8C</color>
+
+</resources>

@@ -1,0 +1,31 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- Overflow Menu -->
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_build_black"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_share_black"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+
+    <!-- Display -->
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/menu_drawer_search"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_open_search"
+        app:showAsAction="ifRoom" />
+</menu>

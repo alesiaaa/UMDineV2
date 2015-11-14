@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">UMDine</string>
+
+
+    <!-- Nav Drawer Strings-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- Menu Titles-->
+    <!-- App Bar-->
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <!-- Menu Drawer-->
+    <string name="menu_drawer_home">Home</string>
+    <string name="menu_drawer_cafes">Cafes</string>
+    <string name="menu_drawer_search">Search</string>
+    <string name="menu_drawer_fav">Favorites</string>
+    <string name="menu_drawer_faq">FAQ</string>
+    <!-- Menu Titles end-->
+
+
+    <!-- Main Content Screen-->
+    <string name="home_text">Welcome to \n Umass Boston Dining!</string>
+    <string name="home_subtext">Please select an option \n below to get started.</string>
+
+    <!-- Button Contents-->
+    <string name="home_button1">What\'s Open Now</string>
+    <string name="home_button2">Favorites</string>
+    <string name="home_button3">Cafes</string>
+
+    <!-- Main Content Screen end-->
+
+
+
+</resources>
