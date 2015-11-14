@@ -17,6 +17,9 @@
     <!--  Button margins, Home page -->
     <dimen name="button_margin">2dp</dimen>
 
+    <!--  Image margins, Cafe Image page viewed in Activity Tabbed -->
+    <dimen name="image_margin">32dp</dimen>
+
     <!-- Default Floating Action Button margins, per the Android Design guidelines. -->
     <dimen name="fab_margin">16dp</dimen>
 

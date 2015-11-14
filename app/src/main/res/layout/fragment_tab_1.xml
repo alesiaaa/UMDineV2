@@ -1,13 +1,24 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
+        android:text="@string/fragment_1_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/Fragment1" />
+        android:layout_margin="@dimen/activity_horizontal_margin_text"
+        android:textSize="?android:textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
-</RelativeLayout>
+    <TextView
+        android:text="@string/fragment_1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_text"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_text"
+        />
+
+</LinearLayout>
