@@ -3,6 +3,7 @@ package com.example.android.appbar;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,6 +16,8 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +41,22 @@ public class MainActivity extends AppCompatActivity {
                 this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+
+
+
+            /*Code for Tabbed View*/
+
+        //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
+        // Get the view from activity_tabbed.xml
+        setContentView(R.layout.activity_tabbed);
+        // Locate the viewpager in activity_main.xml
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        // Set the ViewPagerAdapter into ViewPager
+        viewPager.setAdapter(new viewPagerAdapter(getSupportFragmentManager()));
+
+
+
     }
 
     @Override
@@ -125,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     protected void handleMenuSearch(){
         ActionBar action = getSupportActionBar(); //get the actionbar
 
@@ -187,3 +205,6 @@ public class MainActivity extends AppCompatActivity {
 //
     }
 }
+
+
+
