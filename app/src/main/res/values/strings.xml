@@ -34,5 +34,23 @@
     <!-- Main Content Screen end-->
 
 
+    <!-- Cafe List-->
+    <string name="cafe_list_title">Campus Cafes</string>
+
+    <string name="cafe_list_button1">Food Court</string>
+    <string name="cafe_list_button2">The Atrium Cafe</string>
+    <string name="cafe_list_button3">The University Club</string>
+    <string name="cafe_list_button4">Healey Library Cafe</string>
+    <string name="cafe_list_button5">McCormack Express</string>
+    <string name="cafe_list_button6">Quinn Cafe</string>
+    <string name="cafe_list_button7">Vending</string>
+
+
+    <!-- Cafe List end-->
+
+
+
+
+
 
 </resources>

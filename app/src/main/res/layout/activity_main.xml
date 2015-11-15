@@ -14,7 +14,8 @@ view using match_parent for both width and height to consume the full space avai
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:openDrawer="open">
+        tools:openDrawer="open"
+        android:layout_weight="1">
 
 
         <!-- Main Layout -->
