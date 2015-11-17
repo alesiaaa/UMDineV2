@@ -25,4 +25,9 @@
 
     </group>
 
+    <item
+        android:id="@+id/email_address"
+        android:icon="@drawable/ic_account_circle_black"
+        android:title="@string/menu_drawer_email" />
+
 </menu>

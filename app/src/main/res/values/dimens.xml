@@ -22,6 +22,6 @@
 
 
     <!--  Screen margins, Home page -->
-    <dimen name="cafe_list_margin_text">120dp</dimen>
+    <dimen name="cafe_list_margin_text">80dp</dimen>
 
 </resources>
