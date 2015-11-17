@@ -10,39 +10,35 @@
     <!--tools:showIn="@layout/activity_main"-->
     <!--tools:context=".MainActivity">-->
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/Death_to_stock_communicate_hands_small_blur"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="36dp"
-            android:text="@string/cafe_list_title"
-            android:gravity="center"
-            android:fontFamily="sans-serif-thin"
-            android:textColor="@color/black"
-            android:paddingTop="@dimen/title_margin_text" />
-
-
-    </RelativeLayout>
-
-    <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+  <!--  <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center|bottom">
+        android:gravity="center|bottom">-->
+
+    <ImageView
+        android:id="@+id/image_view_menu_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Death_to_stock_communicate_hands_small_blur"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"/>
+
+    <TextView
+        android:id="@+id/text_view_menu_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="@string/cafe_list_title"
+        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/black"
+        android:paddingTop="@dimen/cafe_list_margin_text" />
 
         <Button
             android:id="@+id/home_button1"
+            android:layout_below="@id/image_view_menu_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button1"
@@ -52,6 +48,7 @@
 
         <Button
             android:id="@+id/home_button2"
+            android:layout_below="@id/home_button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button2"
@@ -61,6 +58,7 @@
 
         <Button
             android:id="@+id/home_button3"
+            android:layout_below="@id/home_button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button3"
@@ -69,7 +67,8 @@
             android:layout_margin="@dimen/button_margin"/>
 
         <Button
-            android:id="@+id/home_button3"
+            android:id="@+id/home_button4"
+            android:layout_below="@id/home_button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button4"
@@ -78,7 +77,8 @@
             android:layout_margin="@dimen/button_margin"/>
 
         <Button
-            android:id="@+id/home_button3"
+            android:id="@+id/home_button5"
+            android:layout_below="@id/home_button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button5"
@@ -87,7 +87,8 @@
             android:layout_margin="@dimen/button_margin"/>
 
         <Button
-            android:id="@+id/home_button3"
+            android:id="@+id/home_button6"
+            android:layout_below="@id/home_button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button6"
@@ -96,7 +97,8 @@
             android:layout_margin="@dimen/button_margin"/>
 
         <Button
-            android:id="@+id/home_button3"
+            android:id="@+id/home_button7"
+            android:layout_below="@id/home_button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button7"
@@ -104,6 +106,12 @@
             android:background="@color/transparentColorPrimary"
             android:layout_margin="@dimen/button_margin"/>
 
-    </LinearLayout>
+
+
+
+
 
 </RelativeLayout>
+
+
+
