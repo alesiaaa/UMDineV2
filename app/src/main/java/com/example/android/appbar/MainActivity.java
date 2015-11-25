@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item1) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        int id = item1.getItemId();
 
         switch (id) {
             case R.id.action_settings:
@@ -75,24 +75,27 @@ public class MainActivity extends AppCompatActivity {
                 return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item1);
     }
 
+    @SuppressWarnings("StatementWithEmptyBody")
 
-  /*  @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    /*@Override
+    public boolean onNavigationItemSelected (MenuItem item) {
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
             // leads to primary home page
         } else if (id == R.id.nav_restaurant_menu) {
-
+            // leads to cafe_list_main.xml
         } else if (id == R.id.nav_search) {
-
+            //open search pane at the top of the screen
         } else if (id == R.id.nav_favorites) {
-
+            //navigates to list of items
         } else if (id == R.id.nav_faq) {
+            // navigates to FAQ page
 
         }
 
@@ -187,8 +190,8 @@ public class MainActivity extends AppCompatActivity {
             mSearchAction.setIcon(getResources().getDrawable(R.drawable.ic_close_search));
 
             isSearchOpened = true;
-        }
-    }*/
+        } */
+
 
 
 

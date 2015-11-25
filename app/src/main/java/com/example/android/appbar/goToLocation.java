@@ -11,7 +11,7 @@ public class goToLocation extends AppCompatActivity {
     @Override
     protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-            setContentView(R.layout.cafe_list_main);
+            setContentView(R.layout.test_file);
     }
 
 
