@@ -20,7 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin_text"
-        android:layout_marginRight="@dimen/activity_horizontal_margin_text"
-        />
+        android:layout_marginRight="@dimen/activity_horizontal_margin_text" />
 
 </LinearLayout>

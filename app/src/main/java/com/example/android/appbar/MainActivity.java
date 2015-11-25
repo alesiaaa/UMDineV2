@@ -1,34 +1,24 @@
 package com.example.android.appbar;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
 
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
 
-    private MenuItem mSearchAction;
-    private boolean isSearchOpened = false;
-    private EditText edtSeach;
+    // private MenuItem mSearchAction;
+   // private boolean isSearchOpened = false;
+   // private TextView edtSeach;
 
 
     @Override
@@ -48,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            /*Code for Tabbed View*/
+       /*     *//*Code for Tabbed View*//*
 
         //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
         // Get the view from activity_tabbed.xml
@@ -57,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         // Set the ViewPagerAdapter into ViewPager
         viewPager.setAdapter(new viewPagerAdapter(getSupportFragmentManager()));
-
+*/
 
 
     }
@@ -81,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_settings:
                 return true;
             case R.id.action_search:
-                handleMenuSearch();
+                //handleMenuSearch();
                 return true;
         }
 
@@ -112,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }*/
 
 
-    @Override
+    /*@Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         mSearchAction = menu.findItem(R.id.action_search);
         return super.onPrepareOptionsMenu(menu);
@@ -130,13 +120,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            handleMenuSearch();
+           // handleMenuSearch();
         } else {
             super.onBackPressed();
         }
 
 
-    }
+    }*/
 
 
 
@@ -147,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    protected void handleMenuSearch(){
+   /* protected void handleMenuSearch(){
         ActionBar action = getSupportActionBar(); //get the actionbar
 
         if(isSearchOpened){ //test if the search is open
@@ -170,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             action.setCustomView(R.layout.search_bar);//add the custom view
             action.setDisplayShowTitleEnabled(false); //hide the title
 
-            edtSeach = (EditText)action.getCustomView().findViewById(R.id.edtSearch); //the text editor
+            edtSeach = (TextView)action.getCustomView().findViewById(R.id.edtSearch); //the text editor
 
             //this is a listener to do a search when the user clicks on search button
             edtSeach.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -198,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
 
             isSearchOpened = true;
         }
-    }
+    }*/
 
 
 
