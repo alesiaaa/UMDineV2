@@ -22,6 +22,10 @@
     <string name="menu_drawer_email">sample.name001@umb.edu</string>
     <!-- Menu Titles end-->
 
+    <!-- Search Hint-->
+    <string name="search_hint">Enter text</string>
+    <!-- Search Hint end-->
+
 
     <!-- Main Content Screen-->
     <string name="home_text">Welcome to \n Umass Boston Dining!</string>

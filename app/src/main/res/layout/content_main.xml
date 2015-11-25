@@ -55,7 +55,8 @@
                     android:text="@string/home_button1"
                     android:textColor="@color/white"
                     android:background="@color/transparentColorPrimary"
-                    android:layout_margin="@dimen/button_margin"/>
+                    android:layout_margin="@dimen/button_margin"
+                   android:onClick="goToWhatsOpenNow"/>
 
                 <Button
                     android:id="@+id/home_button2"
@@ -64,7 +65,8 @@
                     android:text="@string/home_button2"
                     android:textColor="@color/white"
                     android:background="@color/transparentColorPrimary"
-                    android:layout_margin="@dimen/button_margin"/>
+                    android:layout_margin="@dimen/button_margin"
+                    android:onClick="goToFavorites"/>
 
                 <Button
                     android:id="@+id/home_button3"
@@ -73,7 +75,8 @@
                     android:text="@string/home_button3"
                     android:textColor="@color/white"
                     android:background="@color/transparentColorPrimary"
-                    android:layout_margin="@dimen/button_margin"/>
+                    android:layout_margin="@dimen/button_margin"
+                    android:onClick="goToCafeListMain"/>
 
     </LinearLayout>
 
