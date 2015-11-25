@@ -46,73 +46,73 @@
 
     <Button
             android:id="@+id/home_button1"
-            android:layout_below="@id/image_view_menu_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button1"
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
-            android:layout_margin="@dimen/button_margin"/>
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToFoodCourt"/>
 
         <Button
             android:id="@+id/home_button2"
-            android:layout_below="@id/home_button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button2"
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
-            android:layout_margin="@dimen/button_margin"/>
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToAtriumCafe"/>
 
         <Button
             android:id="@+id/home_button3"
-            android:layout_below="@id/home_button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button3"
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
-            android:layout_margin="@dimen/button_margin"/>
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToUniversityClub"/>
 
         <Button
             android:id="@+id/home_button4"
-            android:layout_below="@id/home_button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button4"
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
-            android:layout_margin="@dimen/button_margin"/>
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToHealyLibraryCafe"/>
 
         <Button
             android:id="@+id/home_button5"
-            android:layout_below="@id/home_button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button5"
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
-            android:layout_margin="@dimen/button_margin"/>
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToMcormackExpress"/>
 
         <Button
             android:id="@+id/home_button6"
-            android:layout_below="@id/home_button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button6"
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
-            android:layout_margin="@dimen/button_margin"/>
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToQuinnCade"/>
 
         <Button
             android:id="@+id/home_button7"
-            android:layout_below="@id/home_button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cafe_list_button7"
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
-            android:layout_margin="@dimen/button_margin"/>
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToVending"/>
 
 
 

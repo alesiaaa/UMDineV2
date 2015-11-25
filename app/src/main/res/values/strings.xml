@@ -77,4 +77,17 @@
     <!-- Fragement Tab Text end-->
 
 
+    <!-- Food Court Menu Items-->
+    <string name="food_court_item_1">Dummy</string>
+    <string name="food_court_item_1_price">5.00</string>
+
+    <!-- Food Court Menu Items end-->
+
+    <!-- Atrium Cafe Menu Items-->
+    <string name="atrium_cafe_item_1">Another Dummy</string>
+    <string name="atrium_cafe_item_1_price">5.00</string>
+
+    <!-- Artium Cafe Menu Items end-->
+
+
 </resources>
