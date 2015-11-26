@@ -11,6 +11,7 @@ import android.view.MenuItem;
 public class goToLocation extends AppCompatActivity {
 
 
+
     // Original Sample
     /*@Override
     protected void onCreate (Bundle savedInstanceState){
@@ -19,13 +20,15 @@ public class goToLocation extends AppCompatActivity {
     }*/
 
 
-
-   @Override
+    // Original Sample
+    @Override
     protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.cafe_list_main);
+            setContentView(R.layout.cafe_list_main);
     }
+
+
+
 
 
 // Code from original file for the app bar - doesn't render for some reason
@@ -55,5 +58,10 @@ public class goToLocation extends AppCompatActivity {
         return super.onOptionsItemSelected(item1);
     }
 
+    // Enter search call
+
+    private void doSearch() {
+
+    }
 
 }

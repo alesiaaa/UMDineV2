@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/cafe_list_content"
+    tools:showIn="@layout/cafe_list_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!-- not sure about this - what does it do?
+    tools:context=".MainActivity">-->
+
+
+    <ImageView
+        android:id="@+id/image_view_menu_home"
+        android:src="@mipmap/death_to_stock_slow_down_3_small_blur"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/text_view_menu_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="@string/cafe_list_title"
+        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/cafe_list_margin_text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+
+        <Button
+            android:id="@+id/cafes_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_list_button1"
+            android:textColor="@color/white"
+            android:background="@color/transparentColorPrimary"
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToFoodCourt"/>
+
+        <Button
+            android:id="@+id/cafes_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_list_button2"
+            android:textColor="@color/white"
+            android:background="@color/transparentColorPrimary"
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToAtriumCafe"/>
+
+        <Button
+            android:id="@+id/cafes_button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_list_button3"
+            android:textColor="@color/white"
+            android:background="@color/transparentColorPrimary"
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToUniversityClub"/>
+
+        <Button
+            android:id="@+id/cafes_button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_list_button4"
+            android:textColor="@color/white"
+            android:background="@color/transparentColorPrimary"
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToHealyLibraryCafe"/>
+
+        <Button
+            android:id="@+id/cafes_button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_list_button5"
+            android:textColor="@color/white"
+            android:background="@color/transparentColorPrimary"
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToMcormackExpress"/>
+
+        <Button
+            android:id="@+id/cafes_button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_list_button6"
+            android:textColor="@color/white"
+            android:background="@color/transparentColorPrimary"
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToQuinnCafe"/>
+
+        <!--<Button
+            android:id="@+id/cafes_button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe_list_button7"
+            android:textColor="@color/white"
+            android:background="@color/transparentColorPrimary"
+            android:layout_margin="@dimen/button_margin"
+            android:onClick="goToVending"/>-->
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+

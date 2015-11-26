@@ -6,15 +6,18 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar mToolbar;
+
+    Button home_button_1, home_button_2, home_button_3;
 
     // private MenuItem mSearchAction;
    // private boolean isSearchOpened = false;
@@ -34,6 +37,34 @@ public class MainActivity extends AppCompatActivity {
                 this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+        // Find the buttons on the screen
+
+        home_button_1 = (Button) findViewById(R.id.home_button1);
+        home_button_2 = (Button) findViewById(R.id.home_button2);
+        home_button_3 = (Button) findViewById(R.id.home_button3);
+
+        home_button_1.setOnClickListener(this);
+        home_button_2.setOnClickListener(this);
+        home_button_3.setOnClickListener(this);
+
+
+
+      /*  // Code for content_main.xml button 3
+        // not intending on using, but good example that works
+
+        Button button3 = (Button) findViewById(R.id.home_button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v){
+                Intent intent = new Intent(MainActivity.this, goToLocation.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        */
+
 
 
 
@@ -202,8 +233,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    /** Called when the user clicks the Cafes button in content_main.xml */
+// This is a deprecated on Click method, but a good example
+    /** Called when the user clicks the Cafes button in content_main.xml *//*
     public void goToCafeListMain (View view) {
         //Locate the button in cafe_list_main.xml
         Button button = (Button) findViewById(R.id.home_button3);
@@ -217,6 +248,47 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }*/
+
+
+
+    @Override
+    public void onClick (View v){
+
+        switch (v.getId()) {
+            case R.id.home_button1:
+
+                Intent intent1 = new Intent(MainActivity.this, goToLocation.class);
+                startActivity(intent1);
+                //finish();
+
+                Log.d("UMDine", "Button 1 was clicked ");
+                break;
+
+            case R.id.home_button2:
+
+                Intent intent2 = new Intent(MainActivity.this, goToLocation.class);
+                startActivity(intent2);
+                //finish();
+
+                Log.d("UMDine", "Button 2 was clicked ");
+                break;
+
+            case R.id.home_button3:
+                //Setting content view doesn't work as well as sending to a different class
+                //setContentView(R.layout.cafe_list_main);
+
+
+                // Do something in response to button
+                // This is if you would like to take your activity to a different class
+                Intent intent3 = new Intent(MainActivity.this, goToLocation.class);
+                startActivity(intent3);
+                //finish();
+
+                Log.d("UMDine", "Button 3 was clicked ");
+                break;
+
+            default: break; }
     }
 
 
@@ -224,10 +296,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
