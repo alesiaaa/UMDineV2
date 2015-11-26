@@ -11,18 +11,9 @@
     <!--tools:showIn="@layout/activity_main"-->
     <!--tools:context=".MainActivity">-->
 
-
-    <!--<ImageView
-        android:id="@+id/image_view_menu_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/Death_to_stock_communicate_hands_small_blur"
-        android:adjustViewBounds="true"
-        android:scaleType="fitStart"/>-->
-
     <ImageView
         android:id="@+id/image_view_menu_home"
-        android:src="@drawable/death_to_stock_slow_down_3_small_blur"
+        android:src="@mipmap/death_to_stock_slow_down_3_small_blur"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:scaleType="fitXY"/>
@@ -103,9 +94,9 @@
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
             android:layout_margin="@dimen/button_margin"
-            android:onClick="goToQuinnCade"/>
+            android:onClick="goToQuinnCafe"/>
 
-        <Button
+        <!--<Button
             android:id="@+id/cafes_button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,7 +104,7 @@
             android:textColor="@color/white"
             android:background="@color/transparentColorPrimary"
             android:layout_margin="@dimen/button_margin"
-            android:onClick="goToVending"/>
+            android:onClick="goToVending"/>-->
 
 
 

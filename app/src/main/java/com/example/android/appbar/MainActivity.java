@@ -214,9 +214,16 @@ public class MainActivity extends AppCompatActivity {
                     // Do something in response to button
                     Intent intent = new Intent(MainActivity.this, goToLocation.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
+
+
+
+
+
+
 
 
 
