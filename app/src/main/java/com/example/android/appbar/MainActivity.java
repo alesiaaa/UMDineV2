@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.action_settings:
                 return true;
             case R.id.action_search:
-                //handleMenuSearch();
+                //doSearch();
                 return true;
         }
 

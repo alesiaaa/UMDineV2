@@ -119,7 +119,7 @@ public class goToCafeListMain extends AppCompatActivity implements View.OnClickL
 
             case R.id.cafes_button2:
 
-                Intent intent2 = new Intent(goToCafeListMain.this, goToFoodCourt.class);
+                Intent intent2 = new Intent(goToCafeListMain.this, goToAtriumCafe.class);
                 startActivity(intent2);
                 //finish();
 

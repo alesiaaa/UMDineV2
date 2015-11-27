@@ -12,29 +12,20 @@ import android.view.MenuItem;
 /**
  * Created by alesiarazumova on 11/25/15.
  */
-public class goToFoodCourt extends AppCompatActivity {
+public class goToAtriumCafe extends AppCompatActivity {
 
     private Toolbar mToolbar;
-
-
-    // Original Sample
-    /*@Override
-    protected void onCreate (Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-            setContentView(R.layout.test_file);
-    }*/
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
         // Get the view from activity_tabbed.xml
-        setContentView(R.layout.activity_tabbed);
+        setContentView(R.layout.activity_tabbed_atrium);
         // Locate the viewpager in activity_main.xml
-        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager_atrium);
         // Set the ViewPagerAdapter into ViewPager
-        viewPager.setAdapter(new viewPagerAdapter(getSupportFragmentManager()));
+        viewPager.setAdapter(new viewPagerAdapterAtriumCafe(getSupportFragmentManager()));
 
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);

@@ -58,30 +58,51 @@
 
 
 
-    <!-- Fragement Tab Text-->
-    <string name="fragment_1_title">Summary: </string>
-    <string name="fragment_1_text">The Food Court has something for everyone. From a rotating menu at The Harbor Market and Sizzlin\' Station, to light and healthy fare including a fresh wrap, upscale sandwich, salad bar or soup. For those days you just can\'t decide, you can get a burger at Burger King or pizza from Pandini\'s.</string>
+    <!-- Cafe Info Tab Text-->
 
-    <string name="fragment_2_title_hours">Hours: </string>
-    <string name="fragment_2_title_location">Location: </string>
-    <string name="fragment_2_text_hours">
+    <!-- Titles -->
+    <string name="cafe_info_summary_title">Summary: </string>
+    <string name="cafe_info_hours_title">Hours: </string>
+    <string name="cafe_info_location_title">Location: </string>
+    <string name="cafe_info_menu_items_title">Menu Items: </string>
+    <string name="cafe_info_url_title">Webpage: </string>
+
+    <!-- Food Court Info-->
+    <string name="food_court_summary_text">The Food Court has something for everyone.
+        From a rotating menu at The Harbor Market and Sizzlin\' Station,
+        to light and healthy fare including a fresh wrap, upscale sandwich,
+        salad bar or soup. For those days you just can\'t decide, you can get a
+        burger at Burger King or pizza from Pandini\'s.</string>
+    <string name="food_court_hours">
         Monday - Thursday: \t\t7:00AM - 7:00PM\n
         Friday: \t\t\t\t\t\t\t\t\t\t\t7:00AM - 3:00PM\n
         Saturday - Sunday: \t\tClosed</string>
-    <string name="fragment_2_text_location">
+    <string name="food_court_location">
         1st Floor of the Campus Center\n
         Columbia Point, Boston, MA 02125
     </string>
-
-    <string name="fragment_3_title">Menu Items: </string>
-    <!-- Fragement Tab Text end-->
-
+    <string name="food_court_url">https://umb.sodexomyway.com/dining-choices/atrium.html</string>
 
     <!-- Food Court Menu Items-->
     <string name="food_court_item_1">Dummy</string>
     <string name="food_court_item_1_price">5.00</string>
 
     <!-- Food Court Menu Items end-->
+
+    <!-- Atrium Cafe Info-->
+    <string name="atrium_cafe_summary_text">At the Atrium Cafe, the aroma of freshly brewed Peet\’s gourmet
+        coffee will wake up your senses, so stop by the café and fix yourself a
+        cup of coffee and treat yourself to a fresh made sweet pastry or a savory
+        baked muffin or bagel.</string>
+    <string name="atrium_cafe_hours">
+        Monday - Friday: 8:00AM - 6:00PM\n
+        Saturday:        8:00AM - 2:00PM\n
+        Sunday:          Closed</string>
+    <string name="atrium_cafe_location">
+        Upper Level of the Campus Center\n
+        Columbia Point, Boston, MA 02125
+    </string>
+    <string name="atrium_cafe_url">https://umb.sodexomyway.com/dining-choices/atrium.html</string>
 
     <!-- Atrium Cafe Menu Items-->
     <string name="atrium_cafe_item_1">Another Dummy</string>

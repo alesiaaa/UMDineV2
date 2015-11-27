@@ -16,7 +16,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:text="@string/food_court_hours"
+        android:text="@string/atrium_cafe_hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/activity_horizontal_margin_text"
@@ -32,7 +32,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:text="@string/food_court_location"
+        android:text="@string/atrium_cafe_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/activity_horizontal_margin_text"
@@ -48,7 +48,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:text="@string/food_court_url"
+        android:text="@string/atrium_cafe_url"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/activity_horizontal_margin_text"

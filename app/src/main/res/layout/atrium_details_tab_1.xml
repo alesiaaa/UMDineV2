@@ -16,7 +16,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:text="@string/food_court_summary_text"
+        android:text="@string/atrium_cafe_summary_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/activity_horizontal_margin_text"
