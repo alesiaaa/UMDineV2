@@ -1,24 +1,21 @@
 package com.example.android.appbar;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.app.AppCompatActivity;
 
 
 /**
  * Created by alesiarazumova on 11/14/15.
  */
-public class recyclerViewActivity extends Activity {
+public class recyclerViewActivity extends AppCompatActivity {
 
-   /* private List<menuItem> item;
+
+    /*private List<menuItem> item;
     private RecyclerView rv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState);  
-        setContentView(R.layout.fragment_tab_3);  
+        setContentView(R.layout.cafe_details_tab_3);  
         rv=(RecyclerView)findViewById(R.id.recycler_view);  
         LinearLayoutManager llm = new LinearLayoutManager(this); 
         rv.setLayoutManager(llm); 
@@ -41,14 +38,14 @@ public class recyclerViewActivity extends Activity {
         rv.setAdapter(adapter);
       }
 
-}
-*/
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_tab_3);
+        setContentView(R.layout.cafe_details_tab_3);
         // 1. get a reference to recyclerView
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.menu_item);
 
@@ -71,6 +68,6 @@ public class recyclerViewActivity extends Activity {
         // 5. set item animator to DefaultAnimator
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-    }
+    }*/
 }
 

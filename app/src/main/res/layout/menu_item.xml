@@ -26,7 +26,7 @@
 
     <Button
         android:id="@+id/favorite_button"
-        android:text="Button Text"
+        android:text="Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/activity_horizontal_margin_text"

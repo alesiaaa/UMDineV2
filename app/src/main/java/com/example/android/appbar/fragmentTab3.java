@@ -16,7 +16,7 @@ public class fragmentTab3 extends Fragment {
                              Bundle savedInstanceState) {
 
         // Get the view from fragment_tab_3.xml
-        View view = inflater.inflate(R.layout.fragment_tab_3, container, false);
+        View view = inflater.inflate(R.layout.cafe_details_tab_3, container, false);
         return view;
     }
 

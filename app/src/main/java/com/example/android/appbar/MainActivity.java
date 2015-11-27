@@ -67,8 +67,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
-
        /*     *//*Code for Tabbed View*//*
 
         //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
@@ -288,7 +286,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d("UMDine", "Button 3 was clicked ");
                 break;
 
-            default: break; }
+            default:
+                break;
+        }
     }
 
 

@@ -62,22 +62,18 @@
     <string name="fragment_1_title">Summary: </string>
     <string name="fragment_1_text">The Food Court has something for everyone. From a rotating menu at The Harbor Market and Sizzlin\' Station, to light and healthy fare including a fresh wrap, upscale sandwich, salad bar or soup. For those days you just can\'t decide, you can get a burger at Burger King or pizza from Pandini\'s.</string>
 
-
-    <string name="Fragment2">This is Fragment 2</string>
-    <string name="fragment_2_title_hours">Hours </string>
-    <string name="fragment_2_title_location">Location </string>
+    <string name="fragment_2_title_hours">Hours: </string>
+    <string name="fragment_2_title_location">Location: </string>
     <string name="fragment_2_text_hours">
         Monday - Thursday: \t\t7:00AM - 7:00PM\n
-        Friday: \t\t\t\t\t\t\t\t\t\t7:00AM - 3:00PM\n
+        Friday: \t\t\t\t\t\t\t\t\t\t\t7:00AM - 3:00PM\n
         Saturday - Sunday: \t\tClosed</string>
     <string name="fragment_2_text_location">
         1st Floor of the Campus Center\n
         Columbia Point, Boston, MA 02125
     </string>
 
-
-
-    <string name="Fragment3">This is Fragment 3</string>
+    <string name="fragment_3_title">Menu Items: </string>
     <!-- Fragement Tab Text end-->
 
 

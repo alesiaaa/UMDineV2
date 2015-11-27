@@ -1,20 +1,17 @@
 package com.example.android.appbar;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-
 /**
  * Created by alesiarazumova on 11/14/15.
  */
 
 
+public class menuItemsAdapter {
+
+
 // Create the basic adapter extending from RecyclerView.Adapter
 // Note that we specify the custom ViewHolder which gives us access to our views
-
+ /*
 public class menuItemsAdapter extends RecyclerView.Adapter<menuItemsAdapter.ViewHolder> {
-    private ItemData[] itemsData;
+   private ItemData[] itemsData;
 
     public menuItemsAdapter(ItemData[] itemsData) {
         this.itemsData = itemsData;
@@ -65,5 +62,5 @@ public class menuItemsAdapter extends RecyclerView.Adapter<menuItemsAdapter.View
     @Override
     public int getItemCount() {
         return itemsData.length;
-    }
+    }*/
 }

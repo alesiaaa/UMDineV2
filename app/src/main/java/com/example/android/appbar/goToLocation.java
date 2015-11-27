@@ -1,6 +1,7 @@
 package com.example.android.appbar;
 
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,11 +21,16 @@ public class goToLocation extends AppCompatActivity {
     }*/
 
 
-    // Original Sample
-    @Override
-    protected void onCreate (Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-            setContentView(R.layout.cafe_list_main);
+
+        //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
+        // Get the view from activity_tabbed.xml
+        setContentView(R.layout.activity_tabbed);
+        // Locate the viewpager in activity_main.xml
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        // Set the ViewPagerAdapter into ViewPager
+        viewPager.setAdapter(new viewPagerAdapter(getSupportFragmentManager()));
     }
 
 

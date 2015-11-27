@@ -32,20 +32,20 @@ public class viewPagerAdapter extends FragmentPagerAdapter {
             // Open fragmentTab1.java
             // Return fragment_tab_1.xml
             case 0:
-                fragmentTab1 fragment_tab_1 = new fragmentTab1();
-                return fragment_tab_1;
+                fragmentTab1 cafe_details_tab_1 = new fragmentTab1();
+                return cafe_details_tab_1;
 
             // Open fragmentTab2.java
             // Return fragment_tab_2.xml
             case 1:
-                fragmentTab2 fragment_tab_2 = new fragmentTab2();
-                return fragment_tab_2;
+                fragmentTab2 cafe_details_tab_2 = new fragmentTab2();
+                return cafe_details_tab_2;
 
             // Open fragmentTab3.java
             // Return fragment_tab_3.xml
             case 2:
-                fragmentTab3 fragment_tab_3 = new fragmentTab3();
-                return fragment_tab_3;
+                fragmentTab3 cafe_details_tab_3 = new fragmentTab3();
+                return cafe_details_tab_3;
         }
         return null;
     }
