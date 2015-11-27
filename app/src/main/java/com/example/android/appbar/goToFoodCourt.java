@@ -9,7 +9,7 @@ import android.view.MenuItem;
 /**
  * Created by alesiarazumova on 11/25/15.
  */
-public class goToLocation extends AppCompatActivity {
+public class goToFoodCourt extends AppCompatActivity {
 
 
 

@@ -256,7 +256,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.home_button1:
 
-                Intent intent1 = new Intent(MainActivity.this, goToLocation.class);
+                Intent intent1 = new Intent(MainActivity.this, goToCafeListMain.class);
                 startActivity(intent1);
                 //finish();
 
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.home_button2:
 
-                Intent intent2 = new Intent(MainActivity.this, goToLocation.class);
+                Intent intent2 = new Intent(MainActivity.this, goToCafeListMain.class);
                 startActivity(intent2);
                 //finish();
 
@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 // Do something in response to button
                 // This is if you would like to take your activity to a different class
-                Intent intent3 = new Intent(MainActivity.this, goToLocation.class);
+                Intent intent3 = new Intent(MainActivity.this, goToCafeListMain.class);
                 startActivity(intent3);
                 //finish();
 
