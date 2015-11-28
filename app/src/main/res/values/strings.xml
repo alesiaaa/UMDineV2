@@ -19,6 +19,7 @@
     <string name="menu_drawer_search">Search</string>
     <string name="menu_drawer_fav">Favorites</string>
     <string name="menu_drawer_faq">FAQ</string>
+    <string name="menu_drawer_user">User</string>
     <string name="menu_drawer_email">sample.name001@umb.edu</string>
     <!-- Menu Titles end-->
 
@@ -109,6 +110,27 @@
     <string name="atrium_cafe_item_1_price">5.00</string>
 
     <!-- Artium Cafe Menu Items end-->
+
+    <!-- University Club Info-->
+    <string name="university_club_summary_text">The University Club is open to members and
+        non-members alike and serves a daily lunch buffet including a hot entree,
+        salad bar, soup, and beverages.  Dessert is also available for a nominal extra
+        charge. To learn about membership and reservations, please visit our location.
+        </string>
+    <string name="university_club_hours">
+        Monday - Friday:     11:30 AM - 2:00PM\n
+        Saturday - Sunday:   Closed</string>
+    <string name="university_club_location">
+        2nd Floor of the Campus Center\n
+        Columbia Point, Boston, MA 02125
+    </string>
+    <string name="university_club_url">https://umb.sodexomyway.com/dining-choices/dining-club.html</string>
+
+    <!-- University Club Items-->
+    <string name="university_club_item_1">Another Dummy</string>
+    <string name="university_club_item_1_price">5.00</string>
+
+    <!-- University Club Items end-->
 
 
 </resources>

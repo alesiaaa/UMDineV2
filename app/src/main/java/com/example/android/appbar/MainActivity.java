@@ -1,16 +1,23 @@
 package com.example.android.appbar;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -19,9 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button home_button_1, home_button_2, home_button_3;
 
-    // private MenuItem mSearchAction;
-   // private boolean isSearchOpened = false;
-   // private TextView edtSeach;
+    private MenuItem mSearchAction;
+    private boolean isSearchOpened = false;
+    private TextView edtSeach;
 
 
     @Override
@@ -107,9 +114,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return super.onOptionsItemSelected(item1);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
 
-    /*@Override
+    //@SuppressWarnings("StatementWithEmptyBody")
+
+
     public boolean onNavigationItemSelected (MenuItem item) {
 
         // Handle navigation view item clicks here.
@@ -118,6 +126,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (id == R.id.nav_home) {
             // leads to primary home page
         } else if (id == R.id.nav_restaurant_menu) {
+
+            Intent intent3 = new Intent(MainActivity.this, goToCafeListMain.class);
+            startActivity(intent3);
+
             // leads to cafe_list_main.xml
         } else if (id == R.id.nav_search) {
             //open search pane at the top of the screen
@@ -131,10 +143,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }*/
+    }
 
 
-    /*@Override
+    @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         mSearchAction = menu.findItem(R.id.action_search);
         return super.onPrepareOptionsMenu(menu);
@@ -152,13 +164,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         if(isSearchOpened) {
-           // handleMenuSearch();
+           //doSearch();
         } else {
             super.onBackPressed();
         }
 
 
-    }*/
+    }
 
 
 
@@ -168,11 +180,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
-   /* protected void handleMenuSearch(){
+    protected void handleMenuSearch() {
         ActionBar action = getSupportActionBar(); //get the actionbar
 
-        if(isSearchOpened){ //test if the search is open
+        if (isSearchOpened) { //test if the search is open
 
             action.setDisplayShowCustomEnabled(false); //disable a custom view inside the actionbar
             action.setDisplayShowTitleEnabled(true); //show the title in the action bar
@@ -192,7 +203,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             action.setCustomView(R.layout.search_bar);//add the custom view
             action.setDisplayShowTitleEnabled(false); //hide the title
 
-            edtSeach = (TextView)action.getCustomView().findViewById(R.id.edtSearch); //the text editor
+            edtSeach = (TextView) action.getCustomView().findViewById(R.id.edtSearch); //the text editor
 
             //this is a listener to do a search when the user clicks on search button
             edtSeach.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -200,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                        doSearch();
+                        //
                         return true;
                     }
                     return false;
@@ -219,14 +230,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mSearchAction.setIcon(getResources().getDrawable(R.drawable.ic_close_search));
 
             isSearchOpened = true;
-        } */
-
-
-
-
-// Enter search call
-
-    private void doSearch() {
+        }
 
     }
 
