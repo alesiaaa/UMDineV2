@@ -49,7 +49,6 @@
     <string name="cafe_list_button4">Healey Library Cafe</string>
     <string name="cafe_list_button5">McCormack Express</string>
     <string name="cafe_list_button6">Quinn Cafe</string>
-    <string name="cafe_list_button7">Vending</string>
 
 
     <!-- Cafe List end-->
@@ -67,8 +66,12 @@
     <string name="cafe_info_location_title">Location: </string>
     <string name="cafe_info_menu_items_title">Menu Items: </string>
     <string name="cafe_info_url_title">Webpage: </string>
+    <!-- Titles end -->
+
+
 
     <!-- Food Court Info-->
+
     <string name="food_court_summary_text">The Food Court has something for everyone.
         From a rotating menu at The Harbor Market and Sizzlin\' Station,
         to light and healthy fare including a fresh wrap, upscale sandwich,
@@ -85,12 +88,116 @@
     <string name="food_court_url">https://umb.sodexomyway.com/dining-choices/atrium.html</string>
 
     <!-- Food Court Menu Items-->
-    <string name="food_court_item_1">Dummy</string>
-    <string name="food_court_item_1_price">5.00</string>
+
+    <!--Monday -->
+    <!--Soup-->
+
+    <string name="food_court_item_1">Clam Chowder</string>
+    <string name="food_court_item_1_price">4.50</string>
+
+    <string name="food_court_item_2">Roasted Beet and Fennel</string>
+    <string name="food_court_item_2_price">5.00</string>
+
+    <string name="food_court_item_3">Garlic Tomatoes</string>
+    <string name="food_court_item_3_price">3.00</string>
+
+    <string name="food_court_item_4">Garlic Chicken Tortilas</string>
+    <string name="food_court_item_4_price">5.25</string>
+
+    <!--Breakfast Special-->
+
+    <string name="food_court_item_5">BLT Hash Brown</string>
+    <string name="food_court_item_5_price">4.75</string>
+
+    <string name="food_court_item_6">Bacon</string>
+    <string name="food_court_item_6_price">2.25</string>
+
+    <string name="food_court_item_7">Baby Spinach</string>
+    <string name="food_court_item_7_price">2.50</string>
+
+    <string name="food_court_item_8">Diced Tomatoes</string>
+    <string name="food_court_item_8_price">2.25</string>
+
+    <string name="food_court_item_9">Cheddar Cheese</string>
+    <string name="food_court_item_9_price">2.00</string>
+
+    <!--Lunch Special-->
+
+    <string name="food_court_item_10">Country Fried Steak </string>
+    <string name="food_court_item_10_price">8.00</string>
+
+    <string name="food_court_item_11">Country Fried Portabello</string>
+    <string name="food_court_item_11_price">6.50</string>
+
+    <string name="food_court_item_12">Herbs Roasted Potatoes</string>
+    <string name="food_court_item_12_price">5.00</string>
+
+    <string name="food_court_item_13">Roasted Corn</string>
+    <string name="food_court_item_13_price">3.75</string>
+
+    <string name="food_court_item_14">Steam Broccoli</string>
+    <string name="food_court_item_14_price">2.50</string>
+
+    <string name="food_court_item_15">Dinner Rols</string>
+    <string name="food_court_item_15_price">8.00</string>
+
+    <!--Sizzlin-->
+
+    <string name="food_court_item_16">Omelet Station</string>
+    <string name="food_court_item_16_price">4.00</string>
+
+    <string name="food_court_item_17">Home Fries</string>
+    <string name="food_court_item_17_price">4.25</string>
+
+    <string name="food_court_item_18">Turkey Sausage</string>
+    <string name="food_court_item_18_price">3.00</string>
+
+    <string name="food_court_item_19">Pork Sausage</string>
+    <string name="food_court_item_19_price">5.00</string>
+
+    <!--Pandini-->
+
+    <string name="food_court_item_20">Hawaiian BBQ Chicken Pizza</string>
+    <string name="food_court_item_20_price">2.75/ Slice </string>
+
+    <string name="food_court_item_21">Pepperoni Pizza</string>
+    <string name="food_court_item_21_price">2.75/ Slice </string>
+
+    <string name="food_court_item_22">Cheese Pizza</string>
+    <string name="food_court_item_22_price">2.75/ Slice </string>
+
+    <string name="food_court_item_23">Vegetable Lover\'s Pizza</string>
+    <string name="food_court_item_23_price">2.75/ Slice </string>
+
+    <!--Hot Sub-->
+
+    <string name="food_court_item_24">Meatballs</string>
+    <string name="food_court_item_24_price">6.75 </string>
+
+    <string name="food_court_item_25">Chicken Parmesan</string>
+    <string name="food_court_item_25_price">6.75 </string>
+
+    <!--Pasta-->
+
+    <string name="food_court_item_26">Penne Meatballs</string>
+    <string name="food_court_item_26_price">7.75 </string>
+
+    <string name="food_court_item_27">Penne Chicken Parms</string>
+    <string name="food_court_item_27_price">7.75 </string>
+
+    <!--Deli-->
+    <string name="food_court_item_28">Black And Blue Wrap</string>
+    <string name="food_court_item_28_price">5.00</string>
+
+
 
     <!-- Food Court Menu Items end-->
 
+
+
+
     <!-- Atrium Cafe Info-->
+
     <string name="atrium_cafe_summary_text">At the Atrium Cafe, the aroma of freshly brewed Peet\’s gourmet
         coffee will wake up your senses, so stop by the café and fix yourself a
         cup of coffee and treat yourself to a fresh made sweet pastry or a savory
@@ -103,34 +210,145 @@
         Upper Level of the Campus Center\n
         Columbia Point, Boston, MA 02125
     </string>
-    <string name="atrium_cafe_url">https://umb.sodexomyway.com/dining-choices/atrium.html</string>
+    <string name="atrium_cafe_url">
+        https://umb.sodexomyway.com/dining-choices/atrium.html
+    </string>
 
     <!-- Atrium Cafe Menu Items-->
+
     <string name="atrium_cafe_item_1">Another Dummy</string>
     <string name="atrium_cafe_item_1_price">5.00</string>
 
-    <!-- Artium Cafe Menu Items end-->
+    <!-- Atrium Cafe Menu Items end-->
+
+
+
 
     <!-- University Club Info-->
+
     <string name="university_club_summary_text">The University Club is open to members and
         non-members alike and serves a daily lunch buffet including a hot entree,
         salad bar, soup, and beverages.  Dessert is also available for a nominal extra
         charge. To learn about membership and reservations, please visit our location.
         </string>
     <string name="university_club_hours">
-        Monday - Friday:     11:30 AM - 2:00PM\n
+        Monday - Friday:     11:30AM - 2:00PM\n
         Saturday - Sunday:   Closed</string>
     <string name="university_club_location">
         2nd Floor of the Campus Center\n
         Columbia Point, Boston, MA 02125
     </string>
-    <string name="university_club_url">https://umb.sodexomyway.com/dining-choices/dining-club.html</string>
+    <string name="university_club_url">
+        https://umb.sodexomyway.com/dining-choices/dining-club.html
+    </string>
+
 
     <!-- University Club Items-->
-    <string name="university_club_item_1">Another Dummy</string>
-    <string name="university_club_item_1_price">5.00</string>
+
+
+    <string name="university_club_item_1_price">Please visit out location for pricing.</string>
+
+    <!-- Soup -->
+    <string name="university_club_item_1">Autumn Vegetable</string>
+    <string name="university_club_item_2">Chicken Orzo</string>
+
+    <!-- Entrees -->
+    <string name="university_club_item_3">Chicken with Rice and Corn</string>
+    <string name="university_club_item_4">Tofu with Rice and Corn</string>
+    <string name="university_club_item_5">Beef in Sea Salt with Manioc</string>
+    <string name="university_club_item_6">Brazillian Cous Cous</string>
+    <string name="university_club_item_7">Roasted Season Vegetables</string>
 
     <!-- University Club Items end-->
+
+
+
+
+    <!-- Healey Library Cafe Info-->
+
+    <string name="healey_lib_summary_text">The Healey Library Cafe offers a wide
+        selection of deliciously brewed coffee beverages while allowing patrons to surf
+        the internet wirelessly in the library. The cafe is conveniently located in the
+        second floor lobby, offering fresh pastries, gourmet salads, sandwiches and more!
+        </string>
+    <string name="healey_lib_hours">
+        Monday - Thursday:   8:00AM - 6:30PM\n
+        Friday:              8:00AM - 3:00PM\n
+        Saturday - Sunday:   Closed</string>
+    <string name="healey_lib_location">
+        2nd Floor of the Healey Library\n
+        Columbia Point, Boston, MA 02125
+    </string>
+    <string name="healey_lib_url">
+        https://umb.sodexomyway.com/dining-choices/healey-library-cafe.html
+    </string>
+
+
+    <!-- Healey Library Cafe Items-->
+    <string name="healey_lib_item_1">Another Dummy</string>
+    <string name="healey_lib_item_1_price">5.00</string>
+
+    <!-- Healey Library Cafe Items end-->
+
+
+
+
+
+
+    <!-- McCormack Express Info-->
+
+    <string name="mccormack_express_summary_text">The McCormack Express is a great
+        place to stop for a second before class or grab and go. Comfortable seating,
+        Starbuck’s Coffee, fresh baked goods, salads and cold sandwiches are avalible
+        to enjoy 5 days a week.
+        </string>
+    <string name="mccormack_express_hours">
+        Monday - Thursday:   7:30 AM - 8:00PM\n
+        Friday:              7:30 AM - 2:00PM\n
+        Saturday - Sunday:   Closed</string>
+    <string name="mccormack_express_location">
+        1st Floor of the McCormack Building\n
+        Columbia Point, Boston, MA 02125
+    </string>
+    <string name="mccormack_express_url">
+        https://umb.sodexomyway.com/dining-choices/mccormack-express.html
+    </string>
+
+    <!-- McCormack Express Items-->
+    <string name="mccormack_express_cafe_item_1">Another Dummy</string>
+    <string name="mccormack_express_cafe_item_1_price">5.00</string>
+
+    <!-- McCormack Express Items end-->
+
+
+
+    <!-- Quinn Cafe Info-->
+
+    <string name="quinn_cafe_summary_text">Located on the upper floor of the
+        Quinn Building. Need something on the run? Grab from a variety of
+        prepackaged salads, sandwiches and ready to heat meals. Don\’t forget
+        that hot cup of coffee or energy drink to keep you going.
+        </string>
+    <string name="quinn_cafe_hours">
+        Monday - Friday:     7:00 AM - 3:00PM\n
+        Saturday - Sunday:   Closed</string>
+    <string name="quinn_cafe_location">
+        Top Floor of the Quinn Building\n
+        Columbia Point, Boston, MA 02125
+    </string>
+    <string name="quinn_cafe_url">
+        https://umb.sodexomyway.com/dining-choices/quinn-cafe.html
+    </string>
+
+
+    <!-- Quinn Cafe Items-->
+    <string name="quinn_cafe_item_1">Another Dummy</string>
+    <string name="quinn_cafe_item_1_price">5.00</string>
+
+    <!-- Quinn Cafe Items end-->
+
+
+
 
 
 </resources>

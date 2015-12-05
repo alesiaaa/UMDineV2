@@ -11,7 +11,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/cafe_details_tab_1">
+    android:id="@+id/mccormack_express_details_tab_2">
 
     <TextView
         android:text="@string/cafe_info_hours_title"
@@ -23,7 +23,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:text="@string/atrium_cafe_hours"
+        android:text="@string/mccormack_express_hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/activity_horizontal_margin_text"
@@ -39,7 +39,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:text="@string/atrium_cafe_location"
+        android:text="@string/mccormack_express_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/activity_horizontal_margin_text"
@@ -55,7 +55,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:text="@string/atrium_cafe_url"
+        android:text="@string/mccormack_express_url"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/activity_horizontal_margin_text"

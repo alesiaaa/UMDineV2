@@ -9,6 +9,7 @@
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="grey">#737373</color>
 
 
     // Setting a transparent color, add percent value before 6 digit color code

@@ -12,29 +12,20 @@ import android.view.MenuItem;
 /**
  * Created by alesiarazumova on 11/25/15.
  */
-public class goToFoodCourt extends AppCompatActivity {
+public class goToHealeyLibrary extends AppCompatActivity {
 
     private Toolbar mToolbar;
-
-
-    // Original Sample
-    /*@Override
-    protected void onCreate (Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-            setContentView(R.layout.test_file);
-    }*/
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
-        // Get the view from activity_tabbed.xml
-        setContentView(R.layout.activity_tabbed);
+        // Get the view from activity_tabbed_healey_library.xml
+        setContentView(R.layout.activity_tabbed_healey_library);
         // Locate the viewpager in activity_main.xml
-        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager_healey_library);
         // Set the ViewPagerAdapter into ViewPager
-        viewPager.setAdapter(new viewPagerAdapter(getSupportFragmentManager()));
+        viewPager.setAdapter(new viewPagerAdapterHealeyLibrary(getSupportFragmentManager()));
 
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);

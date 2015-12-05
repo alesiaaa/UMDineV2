@@ -21,7 +21,6 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
     private Toolbar mToolbar;
 
     Button home_button_1, home_button_2, home_button_3;
@@ -45,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+
         // Find the buttons on the screen
 
         home_button_1 = (Button) findViewById(R.id.home_button1);
@@ -54,36 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         home_button_1.setOnClickListener(this);
         home_button_2.setOnClickListener(this);
         home_button_3.setOnClickListener(this);
-
-
-
-      /*  // Code for content_main.xml button 3
-        // not intending on using, but good example that works
-
-        Button button3 = (Button) findViewById(R.id.home_button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View v){
-                Intent intent = new Intent(MainActivity.this, goToLocation.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        */
-
-
-
-       /*     *//*Code for Tabbed View*//*
-
-        //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
-        // Get the view from activity_tabbed.xml
-        setContentView(R.layout.activity_tabbed);
-        // Locate the viewpager in activity_main.xml
-        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        // Set the ViewPagerAdapter into ViewPager
-        viewPager.setAdapter(new viewPagerAdapter(getSupportFragmentManager()));
-*/
 
 
     }
@@ -124,11 +94,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
+
             // leads to primary home page
         } else if (id == R.id.nav_restaurant_menu) {
 
-            Intent intent3 = new Intent(MainActivity.this, goToCafeListMain.class);
-            startActivity(intent3);
+            Intent intent = new Intent(MainActivity.this, goToCafeListMain.class);
+            startActivity(intent);
 
             // leads to cafe_list_main.xml
         } else if (id == R.id.nav_search) {
@@ -235,29 +209,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-// This is a deprecated on Click method, but a good example
-    /** Called when the user clicks the Cafes button in content_main.xml *//*
-    public void goToCafeListMain (View view) {
-        //Locate the button in cafe_list_main.xml
-        Button button = (Button) findViewById(R.id.home_button3);
-        // Capture button click
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    // Do something in response to button
-                    Intent intent = new Intent(MainActivity.this, goToLocation.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-    }*/
-
-
 
     @Override
     public void onClick (View v){
 
         switch (v.getId()) {
+
+            case R.id.nav_restaurant_menu:
+
+                Intent intent = new Intent(MainActivity.this, goToCafeListMain.class);
+                startActivity(intent);
+                //finish();
+
+                startActivity(intent);
+
+                Log.d("UMDine", "Cafes button was clicked ");
+                break;
+
+
+
+
             case R.id.home_button1:
 
                 Intent intent1 = new Intent(MainActivity.this, goToCafeListMain.class);
