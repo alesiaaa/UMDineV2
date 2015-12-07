@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,29 +21,23 @@ import android.widget.TextView;
 /**
  * Created by alesiarazumova on 11/25/15.
  */
-public class goToMccormackExpress extends AppCompatActivity {
-
+public class goToWhatsOpenNow extends AppCompatActivity {
     private Toolbar mToolbar;
+
+   // Button cafes_button_1, cafes_button_2, cafes_button_3,cafes_button_4, cafes_button_5, cafes_button_6;
 
     private MenuItem mSearchAction;
     private boolean isSearchOpened = false;
-    private TextView edtSearch;
+    private TextView edtSeach;
 
 
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-
-        //http://www.androidbegin.com/tutorial/android-viewpagertabstrip-fragments-tutorial/
-        // Get the view from activity_tabbed_healey_library.xml
-        setContentView(R.layout.activity_tabbed_mccormack_express);
-        // Locate the viewpager in activity_main.xml
-        ViewPager viewPager = (ViewPager) findViewById(R.id.pager_mccormack_express);
-        // Set the ViewPagerAdapter into ViewPager
-        viewPager.setAdapter(new viewPagerAdapterMccormackExpress(getSupportFragmentManager()));
-
-
+            setContentView(R.layout.whats_open_main);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
+
 
         // Bring Drawer layout to front
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -61,31 +54,31 @@ public class goToMccormackExpress extends AppCompatActivity {
                         drawer.closeDrawers();
                         switch (menuItem.getItemId()) {
                             case R.id.nav_home:
-                                Intent intent = new Intent(goToMccormackExpress.this, MainActivity.class);
+                                Intent intent = new Intent(goToWhatsOpenNow.this, MainActivity.class);
                                 startActivity(intent);
                                 Log.d("UMDine", "Home was clicked ");
                                 break;
 
                             case R.id.nav_restaurant_menu:
-                                Intent intent1 = new Intent(goToMccormackExpress.this, goToCafeListMain.class);
+                                Intent intent1 = new Intent(goToWhatsOpenNow.this, goToCafeListMain.class);
                                 startActivity(intent1);
                                 Log.d("UMDine", "Cafes was clicked ");
                                 break;
 
                             case R.id.nav_search:
-                                Intent intent2 = new Intent(goToMccormackExpress.this, MainActivity.class);
+                                Intent intent2 = new Intent(goToWhatsOpenNow.this, MainActivity.class);
                                 startActivity(intent2);
                                 Log.d("UMDine", "Search was clicked ");
                                 break;
 
                             case R.id.nav_favorites:
-                                Intent intent3 = new Intent(goToMccormackExpress.this, MainActivity.class);
+                                Intent intent3 = new Intent(goToWhatsOpenNow.this, MainActivity.class);
                                 startActivity(intent3);
                                 Log.d("UMDine", "Favorites was clicked ");
                                 break;
 
                             case R.id.nav_faq:
-                                Intent intent4 = new Intent(goToMccormackExpress.this, goToFAQ.class);
+                                Intent intent4 = new Intent(goToWhatsOpenNow.this, goToFAQ.class);
                                 startActivity(intent4);
                                 Log.d("UMDine", "FAQ was clicked ");
                                 break;
@@ -100,13 +93,28 @@ public class goToMccormackExpress extends AppCompatActivity {
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        // Find the buttons on the screen
+/*
+
+        cafes_button_1 = (Button) findViewById(R.id.cafes_button1);
+        cafes_button_2 = (Button) findViewById(R.id.cafes_button2);
+        cafes_button_3 = (Button) findViewById(R.id.cafes_button3);
+        cafes_button_4 = (Button) findViewById(R.id.cafes_button4);
+        cafes_button_5 = (Button) findViewById(R.id.cafes_button5);
+        cafes_button_6 = (Button) findViewById(R.id.cafes_button6);
+
+        cafes_button_1.setOnClickListener(this);
+        cafes_button_2.setOnClickListener(this);
+        cafes_button_3.setOnClickListener(this);
+        cafes_button_4.setOnClickListener(this);
+        cafes_button_5.setOnClickListener(this);
+        cafes_button_6.setOnClickListener(this);
+
+*/
+
     }
 
 
-
-
-
-// Code from original file for the app bar - doesn't render for some reason
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -132,6 +140,8 @@ public class goToMccormackExpress extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item1);
     }
+
+
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
@@ -159,8 +169,6 @@ public class goToMccormackExpress extends AppCompatActivity {
 
     }
 
-
-
     protected void handleMenuSearch() {
         ActionBar action = getSupportActionBar(); //get the actionbar
 
@@ -171,7 +179,7 @@ public class goToMccormackExpress extends AppCompatActivity {
 
             //hides the keyboard
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(edtSearch.getWindowToken(), 0);
+            imm.hideSoftInputFromWindow(edtSeach.getWindowToken(), 0);
 
             //add the search icon in the action bar
             mSearchAction.setIcon(getResources().getDrawable(R.drawable.ic_open_search));
@@ -184,10 +192,10 @@ public class goToMccormackExpress extends AppCompatActivity {
             action.setCustomView(R.layout.search_bar);//add the custom view
             action.setDisplayShowTitleEnabled(false); //hide the title
 
-            edtSearch = (TextView) action.getCustomView().findViewById(R.id.edtSearch); //the text editor
+            edtSeach = (TextView) action.getCustomView().findViewById(R.id.edtSearch); //the text editor
 
             //this is a listener to do a search when the user clicks on search button
-            edtSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            edtSeach.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -200,11 +208,11 @@ public class goToMccormackExpress extends AppCompatActivity {
             });
 
 
-            edtSearch.requestFocus();
+            edtSeach.requestFocus();
 
             //open the keyboard focused in the edtSearch
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.showSoftInput(edtSearch, InputMethodManager.SHOW_IMPLICIT);
+            imm.showSoftInput(edtSeach, InputMethodManager.SHOW_IMPLICIT);
 
 
             //add the close icon
@@ -217,6 +225,75 @@ public class goToMccormackExpress extends AppCompatActivity {
 
 
 
+    /*@Override
+    public void onClick (View v){
+
+        switch (v.getId()) {
+            case R.id.cafes_button1:
+
+                Intent intent1 = new Intent(goToWhatsOpenNow.this, goToFoodCourt.class);
+                startActivity(intent1);
+                //finish();
+
+                Log.d("UMDine", "Button 1 was clicked ");
+                break;
+
+            case R.id.cafes_button2:
+
+                Intent intent2 = new Intent(goToWhatsOpenNow.this, goToAtriumCafe.class);
+                startActivity(intent2);
+                //finish();
+
+                Log.d("UMDine", "Button 2 was clicked ");
+                break;
+
+            case R.id.cafes_button3:
+                //Setting content view doesn't work as well as sending to a different class
+                //setContentView(R.layout.cafe_list_main);
+
+
+                // Do something in response to button
+                // This is if you would like to take your activity to a different class
+                Intent intent3 = new Intent(goToWhatsOpenNow.this, goToUniversityClub.class);
+                startActivity(intent3);
+                //finish();
+
+                Log.d("UMDine", "Button 3 was clicked ");
+                break;
+
+            case R.id.cafes_button4:
+
+                Intent intent4 = new Intent(goToWhatsOpenNow.this, goToHealeyLibrary.class);
+                startActivity(intent4);
+                //finish();
+
+                Log.d("UMDine", "Button 4 was clicked ");
+                break;
+
+            case R.id.cafes_button5:
+
+                Intent intent5 = new Intent(goToWhatsOpenNow.this, goToMccormackExpress.class);
+                startActivity(intent5);
+                //finish();
+
+                Log.d("UMDine", "Button 5 was clicked ");
+                break;
+
+            case R.id.cafes_button6:
+
+                Intent intent6 = new Intent(goToWhatsOpenNow.this, goToQuinnCafe.class);
+                startActivity(intent6);
+                //finish();
+
+                Log.d("UMDine", "Button 6 was clicked ");
+                break;
+
+
+
+            default:
+                break;
+        }
+    }*/
 
 
 }

@@ -14,6 +14,16 @@
         android:id="@+id/cafe_details_tab_1">
 
         <TextView
+            android:text="@string/cafe_list_category_entrees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_margin_text"
+            android:layout_marginLeft="@dimen/activity_margin_text"
+            android:layout_marginTop="@dimen/activity_margin_text"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <TextView
             android:text="@string/food_court_item_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

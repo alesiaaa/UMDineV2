@@ -15,17 +15,26 @@
         android:id="@+id/cafe_details_tab_1">
 
         <TextView
-            android:text="@string/food_court_item_1"
+            android:text="@string/cafe_list_category_entrees"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text"
+            android:layout_margin="@dimen/activity_margin_text"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <!-- Entrees -->
+
+
+        <TextView
+            android:text="@string/atrium_cafe_item_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_text"
             android:textSize="14sp"
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_1_price"
+            android:text="@string/atrium_cafe_item_1_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -35,7 +44,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_2"
+            android:text="@string/atrium_cafe_item_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -45,7 +54,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_2_price"
+            android:text="@string/atrium_cafe_item_2_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -55,7 +64,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_3"
+            android:text="@string/atrium_cafe_item_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -65,7 +74,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_3_price"
+            android:text="@string/atrium_cafe_item_3_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -75,7 +84,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_4"
+            android:text="@string/atrium_cafe_item_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -85,7 +94,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_4_price"
+            android:text="@string/atrium_cafe_item_4_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -95,7 +104,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_5"
+            android:text="@string/atrium_cafe_item_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -105,7 +114,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_5_price"
+            android:text="@string/atrium_cafe_item_5_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -115,7 +124,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_6"
+            android:text="@string/atrium_cafe_item_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -125,7 +134,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_6_price"
+            android:text="@string/atrium_cafe_item_6_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -135,7 +144,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_7"
+            android:text="@string/atrium_cafe_item_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -145,7 +154,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_7_price"
+            android:text="@string/atrium_cafe_item_7_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -154,7 +163,7 @@
             android:textSize="12sp"
             android:textColor="@color/grey"/>
         <TextView
-            android:text="@string/food_court_item_8"
+            android:text="@string/atrium_cafe_item_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -164,27 +173,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_8_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_9_price"
+            android:text="@string/atrium_cafe_item_8_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -194,7 +183,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_10"
+            android:text="@string/atrium_cafe_item_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -204,7 +193,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_10_price"
+            android:text="@string/atrium_cafe_item_9_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -214,7 +203,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_11"
+            android:text="@string/atrium_cafe_item_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -224,7 +213,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_11_price"
+            android:text="@string/atrium_cafe_item_10_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -234,7 +223,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_12"
+            android:text="@string/atrium_cafe_item_11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -244,7 +233,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_12_price"
+            android:text="@string/atrium_cafe_item_11_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -254,7 +243,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_13"
+            android:text="@string/atrium_cafe_item_12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -264,7 +253,41 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_13_price"
+            android:text="@string/atrium_cafe_item_12_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_margin_text"
+            android:layout_marginLeft="@dimen/activity_margin_text"
+            android:layout_marginTop="@dimen/activity_margin_text_half"
+            android:layout_marginBottom="@dimen/activity_margin_text"
+            android:textSize="12sp"
+            android:textColor="@color/grey"/>
+
+
+
+        <!-- Beverages  -->
+
+        <TextView
+            android:text="@string/cafe_list_category_beverages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_text"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:text="@string/atrium_cafe_item_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_margin_text"
+            android:layout_marginLeft="@dimen/activity_margin_text"
+            android:layout_marginTop="@dimen/activity_margin_text_double"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:text="@string/atrium_cafe_item_13_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -274,7 +297,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_14"
+            android:text="@string/atrium_cafe_item_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -284,7 +307,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_14_price"
+            android:text="@string/atrium_cafe_item_14_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -294,7 +317,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_15"
+            android:text="@string/atrium_cafe_item_15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -304,7 +327,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_15_price"
+            android:text="@string/atrium_cafe_item_15_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -314,7 +337,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_16"
+            android:text="@string/atrium_cafe_item_16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -324,7 +347,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_16_price"
+            android:text="@string/atrium_cafe_item_16_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -334,7 +357,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_17"
+            android:text="@string/atrium_cafe_item_17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -344,7 +367,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_17_price"
+            android:text="@string/atrium_cafe_item_17_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -354,7 +377,7 @@
             android:textColor="@color/grey"/>
 
         <TextView
-            android:text="@string/food_court_item_18"
+            android:text="@string/atrium_cafe_item_18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -364,187 +387,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_18_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_19_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_20_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_21_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_22_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_23_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_24_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_25_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_26_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_half"
-            android:textSize="12sp"
-            android:textColor="@color/grey"/>
-
-        <TextView
-            android:text="@string/food_court_item_27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/activity_margin_text"
-            android:layout_marginLeft="@dimen/activity_margin_text"
-            android:layout_marginTop="@dimen/activity_margin_text_double"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:text="@string/food_court_item_27_price"
+            android:text="@string/atrium_cafe_item_18_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -557,7 +400,7 @@
         <!-- Last item -->
 
         <TextView
-            android:text="@string/food_court_item_28"
+            android:text="@string/atrium_cafe_item_19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"
@@ -567,7 +410,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:text="@string/food_court_item_28_price"
+            android:text="@string/atrium_cafe_item_19_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_margin_text"

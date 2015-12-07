@@ -3,6 +3,7 @@ package com.example.android.appbar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -21,13 +22,14 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
     private Toolbar mToolbar;
 
     Button home_button_1, home_button_2, home_button_3;
 
     private MenuItem mSearchAction;
     private boolean isSearchOpened = false;
-    private TextView edtSeach;
+    private TextView edtSearch;
 
 
     @Override
@@ -38,7 +40,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(mToolbar);
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        // Bring Drawer layout to front
+        final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.bringToFront();
+
+        //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_drawer_view);
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        menuItem.setChecked(true);
+                        drawer.closeDrawers();
+                        switch (menuItem.getItemId()) {
+                            case R.id.nav_home:
+                                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                                startActivity(intent);
+                                Log.d("UMDine", "Home was clicked ");
+                                break;
+
+                            case R.id.nav_restaurant_menu:
+                                Intent intent1 = new Intent(MainActivity.this, goToCafeListMain.class);
+                                startActivity(intent1);
+                                Log.d("UMDine", "Cafes was clicked ");
+                                break;
+
+                            case R.id.nav_search:
+                                Intent intent2 = new Intent(MainActivity.this, MainActivity.class);
+                                startActivity(intent2);
+                                Log.d("UMDine", "Search was clicked ");
+                                break;
+
+                            case R.id.nav_favorites:
+                                Intent intent3 = new Intent(MainActivity.this, MainActivity.class);
+                                startActivity(intent3);
+                                Log.d("UMDine", "Favorites was clicked ");
+                                break;
+
+                            case R.id.nav_faq:
+                                Intent intent4 = new Intent(MainActivity.this, goToFAQ.class);
+                                startActivity(intent4);
+                                Log.d("UMDine", "FAQ was clicked ");
+                                break;
+
+                        }
+                        return true;
+                    }
+                });
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -58,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -66,58 +118,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return true;
     }
 
+
+
+
     @Override
-    public boolean onOptionsItemSelected(MenuItem item1) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item1.getItemId();
+        int id = item.getItemId();
 
         switch (id) {
             case R.id.action_settings:
+                //Settings();
                 return true;
+
             case R.id.action_search:
                 //doSearch();
+                Log.d("UMDine", "Search button was clicked ");
                 return true;
-        }
-
-        return super.onOptionsItemSelected(item1);
-    }
-
-
-    //@SuppressWarnings("StatementWithEmptyBody")
-
-
-    public boolean onNavigationItemSelected (MenuItem item) {
-
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_home) {
-
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
-
-            // leads to primary home page
-        } else if (id == R.id.nav_restaurant_menu) {
-
-            Intent intent = new Intent(MainActivity.this, goToCafeListMain.class);
-            startActivity(intent);
-
-            // leads to cafe_list_main.xml
-        } else if (id == R.id.nav_search) {
-            //open search pane at the top of the screen
-        } else if (id == R.id.nav_favorites) {
-            //navigates to list of items
-        } else if (id == R.id.nav_faq) {
-            // navigates to FAQ page
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+        return super.onOptionsItemSelected(item);
     }
+
 
 
     @Override
@@ -148,12 +173,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
-
-
-
-
-
     protected void handleMenuSearch() {
         ActionBar action = getSupportActionBar(); //get the actionbar
 
@@ -164,7 +183,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             //hides the keyboard
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(edtSeach.getWindowToken(), 0);
+            imm.hideSoftInputFromWindow(edtSearch.getWindowToken(), 0);
 
             //add the search icon in the action bar
             mSearchAction.setIcon(getResources().getDrawable(R.drawable.ic_open_search));
@@ -177,10 +196,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             action.setCustomView(R.layout.search_bar);//add the custom view
             action.setDisplayShowTitleEnabled(false); //hide the title
 
-            edtSeach = (TextView) action.getCustomView().findViewById(R.id.edtSearch); //the text editor
+            edtSearch = (TextView) action.getCustomView().findViewById(R.id.edtSearch); //the text editor
 
             //this is a listener to do a search when the user clicks on search button
-            edtSeach.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            edtSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -193,11 +212,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             });
 
 
-            edtSeach.requestFocus();
+            edtSearch.requestFocus();
 
             //open the keyboard focused in the edtSearch
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.showSoftInput(edtSeach, InputMethodManager.SHOW_IMPLICIT);
+            imm.showSoftInput(edtSearch, InputMethodManager.SHOW_IMPLICIT);
 
 
             //add the close icon
@@ -215,27 +234,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
 
-            case R.id.nav_restaurant_menu:
-
-                Intent intent = new Intent(MainActivity.this, goToCafeListMain.class);
-                startActivity(intent);
-                //finish();
-
-                startActivity(intent);
-
-                Log.d("UMDine", "Cafes button was clicked ");
-                break;
-
-
-
 
             case R.id.home_button1:
 
-                Intent intent1 = new Intent(MainActivity.this, goToCafeListMain.class);
+                Intent intent1 = new Intent(MainActivity.this, goToWhatsOpenNow.class);
                 startActivity(intent1);
                 //finish();
 
-                Log.d("UMDine", "Button 1 was clicked ");
+                Log.d("UMDine", "What's Open Now was clicked ");
                 break;
 
             case R.id.home_button2:
@@ -244,29 +250,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent2);
                 //finish();
 
-                Log.d("UMDine", "Button 2 was clicked ");
+                Log.d("UMDine", "Favorites was clicked ");
                 break;
 
             case R.id.home_button3:
-                //Setting content view doesn't work as well as sending to a different class
-                //setContentView(R.layout.cafe_list_main);
-
-
                 // Do something in response to button
                 // This is if you would like to take your activity to a different class
                 Intent intent3 = new Intent(MainActivity.this, goToCafeListMain.class);
                 startActivity(intent3);
                 //finish();
 
-                Log.d("UMDine", "Button 3 was clicked ");
+                Log.d("UMDine", "Cafes was clicked ");
                 break;
 
             default:
                 break;
         }
     }
-
-
 
 
 

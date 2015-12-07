@@ -3,6 +3,7 @@ package com.example.android.appbar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -40,11 +41,60 @@ public class goToCafeListMain extends AppCompatActivity implements View.OnClickL
         setSupportActionBar(mToolbar);
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        // Bring Drawer layout to front
+        final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.bringToFront();
+
+        //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_drawer_view);
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        menuItem.setChecked(true);
+                        drawer.closeDrawers();
+                        switch (menuItem.getItemId()) {
+                            case R.id.nav_home:
+                                Intent intent = new Intent(goToCafeListMain.this, MainActivity.class);
+                                startActivity(intent);
+                                Log.d("UMDine", "Home was clicked ");
+                                break;
+
+                            case R.id.nav_restaurant_menu:
+                                Intent intent1 = new Intent(goToCafeListMain.this, goToCafeListMain.class);
+                                startActivity(intent1);
+                                Log.d("UMDine", "Cafes was clicked ");
+                                break;
+
+                            case R.id.nav_search:
+                                Intent intent2 = new Intent(goToCafeListMain.this, MainActivity.class);
+                                startActivity(intent2);
+                                Log.d("UMDine", "Search was clicked ");
+                                break;
+
+                            case R.id.nav_favorites:
+                                Intent intent3 = new Intent(goToCafeListMain.this, MainActivity.class);
+                                startActivity(intent3);
+                                Log.d("UMDine", "Favorites was clicked ");
+                                break;
+
+                            case R.id.nav_faq:
+                                Intent intent4 = new Intent(goToCafeListMain.this, goToFAQ.class);
+                                startActivity(intent4);
+                                Log.d("UMDine", "FAQ was clicked ");
+                                break;
+
+                        }
+                        return true;
+                    }
+                });
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
 
         // Find the buttons on the screen
 
@@ -93,36 +143,6 @@ public class goToCafeListMain extends AppCompatActivity implements View.OnClickL
     }
 
 
-    public boolean onNavigationItemSelected (MenuItem item) {
-
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_home) {
-
-            Intent intent = new Intent(goToCafeListMain.this, MainActivity.class);
-            startActivity(intent);
-
-            // leads to primary home page
-        } else if (id == R.id.nav_restaurant_menu) {
-
-            Intent intent = new Intent(goToCafeListMain.this, goToCafeListMain.class);
-            startActivity(intent);
-
-            // leads to cafe_list_main.xml
-        } else if (id == R.id.nav_search) {
-            //open search pane at the top of the screen
-        } else if (id == R.id.nav_favorites) {
-            //navigates to list of items
-        } else if (id == R.id.nav_faq) {
-            // navigates to FAQ page
-
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {

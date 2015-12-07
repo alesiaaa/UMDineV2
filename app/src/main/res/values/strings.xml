@@ -40,6 +40,57 @@
     <!-- Main Content Screen end-->
 
 
+    <!-- What's Open Now -->
+    <string name="whats_open_now_title">What\'s Open Now</string>
+
+
+    <!-- What's Open Now end-->
+
+
+    <!-- FAQ -->
+    <string name="faq_title">FAQ</string>
+
+    <string name="faq_question_1">Do you offer a meal plan?</string>
+    <string name="faq_question_1_answer">Currently we do not offer traditional meal plans.
+        All new students receive a UDine card automatically. This is a reloadable
+        cash card (works like a debit card) that can be loaded at any cash register
+        or by visiting the website – www.sogocashcard.com. Using your UDine card means
+        that you don’t have to carry cash to purchase meals at any of our dining locations.
+        It also earns you rewards with each purchase. You can learn more about our rewards
+        program by visiting the UDine Card page on our website.</string>
+
+    <string name="faq_question_2">What if I lose my UDine Card?</string>
+    <string name="faq_question_2_answer">Your funds are secure. Contact the SoGo Cash Card
+        help line 1 (888) 345-7647 or visit their website www.sogocashcard.com to report
+        the card as stolen. A new card will be issued and your funds transferred to the new
+        card.</string>
+
+    <string name="faq_question_3">Can I purchase my UDine card with my excess Financial Aid
+        Funds?</string>
+    <string name="faq_question_3_answer">Yes. Please visit the Bursar\’s Office for assistance
+        with this. They can issue you a card and assist with the process of loading your
+        financial aid funds to your account.</string>
+
+    <string name="faq_question_4">How do I reload my card?</string>
+    <string name="faq_question_4_answer">You can reload your card with any cashier in our locations.
+        Or you can create an online account at www.sogocashcard.com that allows you to check
+        your balance, reload your card, and set up auto-reload if desired.</string>
+
+    <string name="faq_question_5">I have food allergies or dietary restrictions; do you have
+        resources available to help me?</string>
+    <string name="faq_question_5_answer">Please let us know! Our Campus Dining Services Program
+        can accommodate your special dietary requirements. For more information, please
+        contact Michael Reilly, General Manager at (617) 287-5033. We also have a Registered
+        Dietitian on our team who can help you evaluate and make decisions based on your dining
+        needs.</string>
+
+
+    <!-- FAQ end-->
+
+
+    <!-- Cafe List-->
+
+
     <!-- Cafe List-->
     <string name="cafe_list_title">Campus Cafes</string>
 
@@ -55,9 +106,6 @@
 
 
 
-
-
-
     <!-- Cafe Info Tab Text-->
 
     <!-- Titles -->
@@ -66,7 +114,25 @@
     <string name="cafe_info_location_title">Location: </string>
     <string name="cafe_info_menu_items_title">Menu Items: </string>
     <string name="cafe_info_url_title">Webpage: </string>
+
     <!-- Titles end -->
+
+
+
+
+
+
+    <!-- Food categories start -->
+    <string name="cafe_list_category_soups"><b>Soups</b></string>
+    <string name="cafe_list_category_entrees"><b>Entrées</b></string>
+    <string name="cafe_list_category_beverages"><b>Beverages</b></string>
+    <string name="cafe_list_category_snacks"><b>Snacks</b></string>
+
+    <!-- Food categories end -->
+
+
+
+
 
 
 
@@ -78,9 +144,9 @@
         salad bar or soup. For those days you just can\'t decide, you can get a
         burger at Burger King or pizza from Pandini\'s.</string>
     <string name="food_court_hours">
-        Monday - Thursday: \t\t7:00AM - 7:00PM\n
-        Friday: \t\t\t\t\t\t\t\t\t\t\t7:00AM - 3:00PM\n
-        Saturday - Sunday: \t\tClosed</string>
+        \tMonday - Thursday:   \t7:00AM - 7:00PM\n
+        \tFriday:              \t7:00AM - 3:00PM\n
+        \tSaturday - Sunday:   \tClosed</string>
     <string name="food_court_location">
         1st Floor of the Campus Center\n
         Columbia Point, Boston, MA 02125
@@ -203,9 +269,9 @@
         cup of coffee and treat yourself to a fresh made sweet pastry or a savory
         baked muffin or bagel.</string>
     <string name="atrium_cafe_hours">
-        Monday - Friday: 8:00AM - 6:00PM\n
-        Saturday:        8:00AM - 2:00PM\n
-        Sunday:          Closed</string>
+        \tMonday - Friday: \t8:00AM - 6:00PM\n
+        \tSaturday:        \t8:00AM - 2:00PM\n
+        \tSunday:          \tClosed</string>
     <string name="atrium_cafe_location">
         Upper Level of the Campus Center\n
         Columbia Point, Boston, MA 02125
@@ -214,10 +280,77 @@
         https://umb.sodexomyway.com/dining-choices/atrium.html
     </string>
 
+
     <!-- Atrium Cafe Menu Items-->
 
-    <string name="atrium_cafe_item_1">Another Dummy</string>
+
+    <string name="atrium_cafe_item_1"> Azteca Chicken and Vegetables</string>
     <string name="atrium_cafe_item_1_price">5.00</string>
+
+    <string name="atrium_cafe_item_2">American Bounty</string>
+    <string name="atrium_cafe_item_2_price">15.00</string>
+
+    <string name="atrium_cafe_item_3">Cream of Broccoli Dummy</string>
+    <string name="atrium_cafe_item_3_price">3.00</string>
+
+
+
+    <string name="atrium_cafe_item_4">Mac and Cheese</string>
+    <string name="atrium_cafe_item_4_price">5.00</string>
+
+    <string name="atrium_cafe_item_5">Sugar Snap Peas </string>
+    <string name="atrium_cafe_item_5_price">3.00</string>
+
+    <string name="atrium_cafe_item_6">Steamed rice </string>
+    <string name="atrium_cafe_item_6_price">5.00</string>
+
+    <string name="atrium_cafe_item_7">Refried Beans </string>
+    <string name="atrium_cafe_item_7_price">6.00</string>
+
+    <string name="atrium_cafe_sizzlin"> <b>Sizzlin\'</b></string>
+
+
+    <string name="atrium_cafe_item_8">Rice Bowl </string>
+    <string name="atrium_cafe_item_8_price">5.00</string>
+
+    <string name="atrium_cafe_item_9">Fried Tofu </string>
+    <string name="atrium_cafe_item_9_price">15.00</string>
+
+    <string name="atrium_cafe_pandinis"> <b>Pandini\'s </b></string>
+
+
+    <string name="atrium_cafe_item_10">Cheese </string>
+    <string name="atrium_cafe_item_10_price">15.00</string>
+
+    <string name="atrium_cafe_item_11">Bacon Jalapeno </string>
+    <string name="atrium_cafe_item_11_price">15.00</string>
+
+    <string name="atrium_cafe_item_12">Asian Flat Bread  </string>
+    <string name="atrium_cafe_item_12_price">5.00</string>
+
+    <!-- Beverages -->
+
+    <string name="atrium_cafe_item_13">Coffee of the Day</string> 
+    <string name="atrium_cafe_item_13_price">Small, 2.00 | Medium, 2.55 | Large, 3.00 </string>  
+
+    <string name="atrium_cafe_item_14">Caffe au Lait</string> 
+    <string name="atrium_cafe_item_14_price">Small, 2.20 | Medium, 2.40 | Large, 3.50 </string>
+      
+    <string name="atrium_cafe_item_15">Cocoa</string> 
+    <string name="atrium_cafe_item_15_price">Small, 3.20 | Medium, 3.30 | Large, 3.50 </string>  
+
+    <string name="atrium_cafe_item_16">Caffe Latte</string> 
+    <string name="atrium_cafe_item_16_price">Small, 2.25 | Medium, 3.75 | Large, 4.35 </string>  
+
+    <string name="atrium_cafe_item_17">Cappuccino</string>
+     <string name="atrium_cafe_item_17_price">Small, 3.25 | Medium, 4.25 | Large, 4.75 </string>  
+
+    <string name="atrium_cafe_item_18">Flavored Latte</string> 
+    <string name="atrium_cafe_item_18_price">Small, 2.00 | Medium, 2.55 | Large, 3.00 </string>
+      
+    <string name="atrium_cafe_item_19">Espresso</string> 
+    <string name="atrium_cafe_item_19_price">Small, 2.00 | Medium, 2.55 | Large, 3.00 </string>
+
 
     <!-- Atrium Cafe Menu Items end-->
 
@@ -232,8 +365,8 @@
         charge. To learn about membership and reservations, please visit our location.
         </string>
     <string name="university_club_hours">
-        Monday - Friday:     11:30AM - 2:00PM\n
-        Saturday - Sunday:   Closed</string>
+        \tMonday - Friday:     \t11:30AM - 2:00PM\n
+        \tSaturday - Sunday:   \tClosed</string>
     <string name="university_club_location">
         2nd Floor of the Campus Center\n
         Columbia Point, Boston, MA 02125
@@ -246,7 +379,7 @@
     <!-- University Club Items-->
 
 
-    <string name="university_club_item_1_price">Please visit out location for pricing.</string>
+    <string name="university_club_item_1_price">Please visit our location for pricing.</string>
 
     <!-- Soup -->
     <string name="university_club_item_1">Autumn Vegetable</string>
@@ -272,9 +405,9 @@
         second floor lobby, offering fresh pastries, gourmet salads, sandwiches and more!
         </string>
     <string name="healey_lib_hours">
-        Monday - Thursday:   8:00AM - 6:30PM\n
-        Friday:              8:00AM - 3:00PM\n
-        Saturday - Sunday:   Closed</string>
+        \tMonday - Thursday:   \t8:00AM - 6:30PM\n
+        \tFriday:              \t8:00AM - 3:00PM\n
+        \tSaturday - Sunday:   \tClosed</string>
     <string name="healey_lib_location">
         2nd Floor of the Healey Library\n
         Columbia Point, Boston, MA 02125
@@ -285,8 +418,71 @@
 
 
     <!-- Healey Library Cafe Items-->
-    <string name="healey_lib_item_1">Another Dummy</string>
-    <string name="healey_lib_item_1_price">5.00</string>
+
+    <!-- Snacks-->
+    <string name="healey_lib_item_1">Whole Fruit</string>
+    <string name="healey_lib_item_1_price">0.99</string>
+
+    <string name="healey_lib_item_2">Cliff Bars</string>
+    <string name="healey_lib_item_2_price">2.25</string>
+
+    <string name="healey_lib_item_3">Nutella Cups</string>
+    <string name="healey_lib_item_3_price">2.25</string>
+
+    <string name="healey_lib_item_4">Kind Bars</string>
+    <string name="healey_lib_item_4_price">1.99</string>
+
+    <string name="healey_lib_item_5">Deep River Chips</string>
+    <string name="healey_lib_item_5_price">2.25</string>
+
+    <string name="healey_lib_item_6">Starbucks Gum</string>
+    <string name="healey_lib_item_6_price">2.25</string>
+
+    <string name="healey_lib_item_7">Starbucks Mints</string>
+    <string name="healey_lib_item_7_price">2.25</string>
+
+    <string name="healey_lib_item_8">Biscotti\'s</string>
+    <string name="healey_lib_item_8_price">1.75</string>
+
+
+    <!-- Beverages -->
+
+    <string name="healey_lib_item_9">Caffe Latte</string>
+    <string name="healey_lib_item_9_price">Tall, 3.15 | Grande, 3.75 | Venti, 4.15 </string>
+
+    <string name="healey_lib_item_10">Cappuccino</string>
+    <string name="healey_lib_item_10_price">Tall, 3.15 | Grande, 3.75 | Venti, 4.15 </string>
+
+    <string name="healey_lib_item_11">Caffe Mocha</string>
+    <string name="healey_lib_item_11_price">Tall, 3.65 | Grande, 4.25 | Venti, 4.65 </string>
+
+    <string name="healey_lib_item_12">Vanilla Latte</string>
+    <string name="healey_lib_item_12_price">Tall, 3.65 | Grande, 4.25 | Venti, 4.65 </string>
+
+    <string name="healey_lib_item_13">Caramel Macchiato</string>
+    <string name="healey_lib_item_13_price">Tall, 3.75 | Grande, 4.45 | Venti, 4.75 </string>
+
+    <string name="healey_lib_item_14">White Chocolate Mocha</string>
+    <string name="healey_lib_item_14_price">Tall, 3.75 | Grande, 4.45 | Venti, 4.75 </string>
+
+    <string name="healey_lib_item_15">Caffe Americano</string>
+    <string name="healey_lib_item_15_price">Tall, 2.25 | Grande, 2.75 | Venti, 3.25 </string>
+
+    <string name="healey_lib_item_16">Iced Coffee</string>
+    <string name="healey_lib_item_16_price">Tall, 2.75 | Grande, 2.65 | Venti, 2.95 </string>
+
+    <string name="healey_lib_item_17">Tazo Iced Tea</string>
+    <string name="healey_lib_item_17_price">Tall, 1.75 | Grande, 2.25 | Venti, 2.65 </string>
+
+    <string name="healey_lib_item_18">Tazo Iced Tea Lemonade</string>
+    <string name="healey_lib_item_18_price">Tall, 2.55 | Grande, 2.95 | Venti, 3.55 </string>
+
+    <string name="healey_lib_item_19">Tazo Iced Chai Tea Latte</string>
+    <string name="healey_lib_item_19_price">Tall, 3.45 | Grande, 3.95 | Venti, 4.25 </string>
+
+    <string name="healey_lib_item_20">Tazo Iced Green Tea Latte</string>
+    <string name="healey_lib_item_20_price">Tall, 3.45 | Grande, 3.95 | Venti, 4.25 </string>
+
 
     <!-- Healey Library Cafe Items end-->
 
@@ -303,9 +499,9 @@
         to enjoy 5 days a week.
         </string>
     <string name="mccormack_express_hours">
-        Monday - Thursday:   7:30 AM - 8:00PM\n
-        Friday:              7:30 AM - 2:00PM\n
-        Saturday - Sunday:   Closed</string>
+        \tMonday - Thursday:   \t7:30 AM - 8:00PM\n
+        \tFriday:              \t7:30 AM - 2:00PM\n
+        \tSaturday - Sunday:   \tClosed</string>
     <string name="mccormack_express_location">
         1st Floor of the McCormack Building\n
         Columbia Point, Boston, MA 02125
@@ -315,8 +511,63 @@
     </string>
 
     <!-- McCormack Express Items-->
-    <string name="mccormack_express_cafe_item_1">Another Dummy</string>
-    <string name="mccormack_express_cafe_item_1_price">5.00</string>
+
+    <!-- Snacks-->
+    <string name="mccormack_express_cafe_item_1">Muffin</string>
+    <string name="mccormack_express_cafe_item_1_price">1.99</string>
+
+    <string name="mccormack_express_cafe_item_2">Brownie</string>
+    <string name="mccormack_express_cafe_item_2_price">1.99</string>
+
+    <string name="mccormack_express_cafe_item_3">Cookie</string>
+    <string name="mccormack_express_cafe_item_3_price">1.49</string>
+
+    <string name="mccormack_express_cafe_item_4">Scone</string>
+    <string name="mccormack_express_cafe_item_4_price">2.39</string>
+
+    <string name="mccormack_express_cafe_item_5">Cinnanmon Roll</string>
+    <string name="mccormack_express_cafe_item_5_price">2.29</string>
+
+    <string name="mccormack_express_cafe_item_6">Croissant</string>
+    <string name="mccormack_express_cafe_item_6_price">1.99</string>
+
+    <string name="mccormack_express_cafe_item_7">Sandwiches</string>
+    <string name="mccormack_express_cafe_item_7_price">3.25 - 6.99</string>
+
+    <string name="mccormack_express_cafe_item_8">Salads</string>
+    <string name="mccormack_express_cafe_item_8_price">6.99 - 7.99</string>
+
+
+    <!-- Beverages-->
+
+    <string name="mccormack_express_cafe_item_9">Coffee</string>
+    <string name="mccormack_express_cafe_item_9_price">Tall, 1.85 | Grande, 2.10 | Venti, 2.55 </string>
+
+    <string name="mccormack_express_cafe_item_10">Cappuccino</string>
+    <string name="mccormack_express_cafe_item_10_price">Tall, 2.49 | Grande, 2.79 | Venti, 2.99 </string>
+
+    <string name="mccormack_express_cafe_item_11">Hot Chocolate</string>
+    <string name="mccormack_express_cafe_item_11_price">Tall, 2.19 | Grande, 2.39 | Venti, 2.59 </string>
+
+    <string name="mccormack_express_cafe_item_12">Tazo Tea Bag</string>
+    <string name="mccormack_express_cafe_item_12_price">1.45</string>
+    <string name="mccormack_express_cafe_item_13">Bottled Soda</string>
+    <string name="mccormack_express_cafe_item_13_price">1.99</string>
+    <string name="mccormack_express_cafe_item_14">Bottled Water</string>
+    <string name="mccormack_express_cafe_item_14_price">1.89</string>
+    <string name="mccormack_express_cafe_item_15">Minute Maid Juice</string>
+    <string name="mccormack_express_cafe_item_15_price">1.99</string>
+    <string name="mccormack_express_cafe_item_16">Odwalla Juice</string>
+    <string name="mccormack_express_cafe_item_16_price">3.69</string>
+    <string name="mccormack_express_cafe_item_17">Milk Pint</string>
+    <string name="mccormack_express_cafe_item_17_price">1.69</string>
+    <string name="mccormack_express_cafe_item_18">Simply Juice</string>
+    <string name="mccormack_express_cafe_item_18_price">2.69</string>
+
+
+
+
+
 
     <!-- McCormack Express Items end-->
 
@@ -330,8 +581,8 @@
         that hot cup of coffee or energy drink to keep you going.
         </string>
     <string name="quinn_cafe_hours">
-        Monday - Friday:     7:00 AM - 3:00PM\n
-        Saturday - Sunday:   Closed</string>
+        \tMonday - Friday:     \t7:00 AM - 3:00PM\n
+        \tSaturday - Sunday:   \tClosed</string>
     <string name="quinn_cafe_location">
         Top Floor of the Quinn Building\n
         Columbia Point, Boston, MA 02125
