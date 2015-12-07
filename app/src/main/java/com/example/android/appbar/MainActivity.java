@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -21,9 +23,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar mToolbar;
+
+    private ShareActionProvider mShareActionProvider;
 
     Button home_button_1, home_button_2, home_button_3;
 
@@ -108,6 +113,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    private void shareIntent()
+    {
+        Intent sendIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sendIntent.setType("text/plain");
+        String shareBody = "For more information on UMass Dining please visit our webpage at " +
+                "https://umb.sodexomyway.com/ or download our application, UMDine.";
+        sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "UMDine: The UMass Dining Experience");
+        sendIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(sendIntent, "Share via"));
+
+        //sendIntent.setAction(android.content.Intent.ACTION_SEND);
+    }
+
 
 
     @Override
@@ -115,10 +133,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.app_bar_main, menu);
 
+        // Locate MenuItem with ShareActionProvider
+        MenuItem shareItem = menu.findItem(R.id.action_share);
+
+        // Fetch and store ShareActionProvider
+        mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
+
+        /*
+        shareItem.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                shareIntent();
+            }
+        });*/
+
+        // Return true to display menu
         return true;
     }
-
-
 
 
     @Override
@@ -131,6 +161,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (id) {
             case R.id.action_settings:
                 //Settings();
+                Log.d("UMDine", "Settings button was clicked ");
+                return true;
+
+            case R.id.action_share:
+                shareIntent();
+                Log.d("UMDine", "Share button was clicked ");
                 return true;
 
             case R.id.action_search:
