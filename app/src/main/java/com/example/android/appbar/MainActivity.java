@@ -1,16 +1,15 @@
 package com.example.android.appbar;
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Toolbar mToolbar;
 
-    private ShareActionProvider mShareActionProvider;
+   //private ShareActionProvider mShareActionProvider;
 
     Button home_button_1, home_button_2, home_button_3;
 
@@ -127,6 +126,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    private void searchIntent()
+    {
+        Intent searchIntent = new Intent(Intent.ACTION_WEB_SEARCH);
+        String keyword= "UMass Dining";
+        searchIntent.putExtra(SearchManager.QUERY, keyword);
+        startActivity(searchIntent);
+
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -134,10 +143,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getMenuInflater().inflate(R.menu.app_bar_main, menu);
 
         // Locate MenuItem with ShareActionProvider
-        MenuItem shareItem = menu.findItem(R.id.action_share);
+       // MenuItem shareItem = menu.findItem(R.id.action_share);
 
         // Fetch and store ShareActionProvider
-        mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
+        //mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
 
         /*
         shareItem.setOnClickListener(new View.OnClickListener() {
@@ -170,7 +179,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return true;
 
             case R.id.action_search:
-                //doSearch();
+                //searchIntent();
+
+                handleMenuSearch();
+
                 Log.d("UMDine", "Search button was clicked ");
                 return true;
 
@@ -240,7 +252,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                        //
+
+                        searchIntent();
+
                         return true;
                     }
                     return false;

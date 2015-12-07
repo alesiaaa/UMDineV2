@@ -123,6 +123,20 @@ public class goToWhatsOpenNow extends AppCompatActivity {
         return true;
     }
 
+    private void shareIntent()
+    {
+        Intent sendIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sendIntent.setType("text/plain");
+        String shareBody = "For more information on UMass Dining please visit our webpage at " +
+                "https://umb.sodexomyway.com/ or download our application, UMDine.";
+        sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "UMDine: The UMass Dining Experience");
+        sendIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(sendIntent, "Share via"));
+
+        //sendIntent.setAction(android.content.Intent.ACTION_SEND);
+    }
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item1) {
         // Handle action bar item clicks here. The action bar will
@@ -132,11 +146,22 @@ public class goToWhatsOpenNow extends AppCompatActivity {
 
         switch (id) {
             case R.id.action_settings:
+                //Settings();
+                Log.d("UMDine", "Settings button was clicked ");
                 return true;
+
+            case R.id.action_share:
+                shareIntent();
+                Log.d("UMDine", "Share button was clicked ");
+                return true;
+
             case R.id.action_search:
                 //doSearch();
+                Log.d("UMDine", "Search button was clicked ");
                 return true;
+
         }
+
 
         return super.onOptionsItemSelected(item1);
     }
