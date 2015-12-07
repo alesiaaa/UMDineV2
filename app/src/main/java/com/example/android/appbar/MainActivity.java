@@ -128,12 +128,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void searchIntent()
     {
+
         Intent searchIntent = new Intent(Intent.ACTION_WEB_SEARCH);
         String keyword= "UMass Dining";
         searchIntent.putExtra(SearchManager.QUERY, keyword);
         startActivity(searchIntent);
 
+
+
+       // Intent searchIntent = getIntent();
+       // if (Intent.ACTION_SEARCH.equals(searchIntent.getAction())){
+        //    String query = searchIntent.getStringExtra(SearchManager.QUERY);
+       //     completeSearch(query);
+       // }
+
     }
+
+   /* private void completeSearch (String query){
+
+
+    }*/
 
 
 
@@ -169,7 +183,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (id) {
             case R.id.action_settings:
-                //Settings();
+
+                Intent intent = new Intent(MainActivity.this, goToSettings.class);
+                startActivity(intent);
                 Log.d("UMDine", "Settings button was clicked ");
                 return true;
 
@@ -179,7 +195,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return true;
 
             case R.id.action_search:
-                //searchIntent();
 
                 handleMenuSearch();
 
@@ -211,7 +226,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         if(isSearchOpened) {
-           //doSearch();
+           handleMenuSearch();
         } else {
             super.onBackPressed();
         }
@@ -252,6 +267,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+
+                       // v.setOnQueryTextListener;
 
                         searchIntent();
 

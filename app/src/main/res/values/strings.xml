@@ -28,6 +28,28 @@
     <!-- Search Hint end-->
 
 
+
+    <!-- Settings-->
+
+    <string name="settings_title">Settings</string>
+
+    <string name="settings_text">About</string>
+
+    <string name="settings_description">Never go hungry with UMDine - the premier
+        UMass Boston application that allows you to browse all the eateries
+        on campus and choose according to your palate, any time. With UMDine
+        you can browse up-to-date cafe menus, prices, and locations, save favorite
+        items and search all menus to satiate your need. Whether you\'re on your
+        way to class or seek to grab a snack after a long study session at the
+        library, be sure to check the app for the latest dining options on campus.</string>
+
+    <string name="settings_copyright_text">™ and © 2015 BGGR Inc. All Rights Reserved.</string>
+
+
+
+    <!-- Settings end-->
+
+
     <!-- Main Content Screen-->
     <string name="home_text">Welcome to \n Umass Boston Dining!</string>
     <string name="home_subtext">Please select an option \n below to get started.</string>

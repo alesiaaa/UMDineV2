@@ -1,5 +1,6 @@
 package com.example.android.appbar;
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -123,6 +124,15 @@ public class goToAtriumCafe extends AppCompatActivity {
         //sendIntent.setAction(android.content.Intent.ACTION_SEND);
     }
 
+    private void searchIntent()
+    {
+        Intent searchIntent = new Intent(Intent.ACTION_WEB_SEARCH);
+        String keyword= "UMass Dining";
+        searchIntent.putExtra(SearchManager.QUERY, keyword);
+        startActivity(searchIntent);
+
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item1) {
         // Handle action bar item clicks here. The action bar will
@@ -132,7 +142,8 @@ public class goToAtriumCafe extends AppCompatActivity {
 
         switch (id) {
             case R.id.action_settings:
-                //Settings();
+                Intent intent = new Intent(goToAtriumCafe.this, goToSettings.class);
+                startActivity(intent);
                 Log.d("UMDine", "Settings button was clicked ");
                 return true;
 
@@ -142,7 +153,8 @@ public class goToAtriumCafe extends AppCompatActivity {
                 return true;
 
             case R.id.action_search:
-                //doSearch();
+                handleMenuSearch();
+
                 Log.d("UMDine", "Search button was clicked ");
                 return true;
 
@@ -210,7 +222,9 @@ public class goToAtriumCafe extends AppCompatActivity {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                        //
+
+                        searchIntent();
+
                         return true;
                     }
                     return false;
