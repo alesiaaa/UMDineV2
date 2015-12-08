@@ -68,12 +68,6 @@ public class goToCafeListMain extends AppCompatActivity implements View.OnClickL
                                 Log.d("UMDine", "Cafes was clicked ");
                                 break;
 
-                            case R.id.nav_search:
-                                Intent intent2 = new Intent(goToCafeListMain.this, MainActivity.class);
-                                startActivity(intent2);
-                                Log.d("UMDine", "Search was clicked ");
-                                break;
-
                             case R.id.nav_favorites:
                                 Intent intent3 = new Intent(goToCafeListMain.this, MainActivity.class);
                                 startActivity(intent3);
@@ -141,7 +135,7 @@ public class goToCafeListMain extends AppCompatActivity implements View.OnClickL
     private void searchIntent()
     {
         Intent searchIntent = new Intent(Intent.ACTION_WEB_SEARCH);
-        String keyword= "UMass Dining";
+        String keyword= "umass boston dining";
         searchIntent.putExtra(SearchManager.QUERY, keyword);
         startActivity(searchIntent);
 

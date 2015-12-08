@@ -1,5 +1,6 @@
 package com.example.android.appbar;
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -64,14 +65,8 @@ public class goToSettings extends AppCompatActivity {
                                 Log.d("UMDine", "Cafes was clicked ");
                                 break;
 
-                            case R.id.nav_search:
-                                Intent intent2 = new Intent(goToSettings.this, MainActivity.class);
-                                startActivity(intent2);
-                                Log.d("UMDine", "Search was clicked ");
-                                break;
-
                             case R.id.nav_favorites:
-                                Intent intent3 = new Intent(goToSettings.this, MainActivity.class);
+                                Intent intent3 = new Intent(goToSettings.this, goToFavorites.class);
                                 startActivity(intent3);
                                 Log.d("UMDine", "Favorites was clicked ");
                                 break;
@@ -116,6 +111,14 @@ public class goToSettings extends AppCompatActivity {
         //sendIntent.setAction(android.content.Intent.ACTION_SEND);
     }
 
+    private void searchIntent()
+    {
+        Intent searchIntent = new Intent(Intent.ACTION_WEB_SEARCH);
+        String keyword= "umass boston dining";
+        searchIntent.putExtra(SearchManager.QUERY, keyword);
+        startActivity(searchIntent);
+
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item1) {
@@ -126,7 +129,8 @@ public class goToSettings extends AppCompatActivity {
 
         switch (id) {
             case R.id.action_settings:
-                //Settings();
+                Intent intent = new Intent(goToSettings.this, goToSettings.class);
+                startActivity(intent);
                 Log.d("UMDine", "Settings button was clicked ");
                 return true;
 
@@ -136,7 +140,7 @@ public class goToSettings extends AppCompatActivity {
                 return true;
 
             case R.id.action_search:
-                //doSearch();
+                searchIntent();
                 Log.d("UMDine", "Search button was clicked ");
                 return true;
 
@@ -165,7 +169,7 @@ public class goToSettings extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            //doSearch();
+            handleMenuSearch();
         } else {
             super.onBackPressed();
         }

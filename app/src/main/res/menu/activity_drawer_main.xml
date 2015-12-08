@@ -16,10 +16,6 @@
             android:icon="@drawable/ic_restaurant_menu_black"
             android:title="@string/menu_drawer_cafes" />
         <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/ic_search_black"
-            android:title="@string/menu_drawer_search" />
-        <item
             android:id="@+id/nav_favorites"
             android:icon="@drawable/ic_favorite_black"
             android:title="@string/menu_drawer_fav" />

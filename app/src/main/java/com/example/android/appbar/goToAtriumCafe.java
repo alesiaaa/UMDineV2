@@ -72,12 +72,6 @@ public class goToAtriumCafe extends AppCompatActivity {
                                 Log.d("UMDine", "Cafes was clicked ");
                                 break;
 
-                            case R.id.nav_search:
-                                Intent intent2 = new Intent(goToAtriumCafe.this, MainActivity.class);
-                                startActivity(intent2);
-                                Log.d("UMDine", "Search was clicked ");
-                                break;
-
                             case R.id.nav_favorites:
                                 Intent intent3 = new Intent(goToAtriumCafe.this, MainActivity.class);
                                 startActivity(intent3);
@@ -127,7 +121,7 @@ public class goToAtriumCafe extends AppCompatActivity {
     private void searchIntent()
     {
         Intent searchIntent = new Intent(Intent.ACTION_WEB_SEARCH);
-        String keyword= "UMass Dining";
+        String keyword= "umass boston dining";
         searchIntent.putExtra(SearchManager.QUERY, keyword);
         startActivity(searchIntent);
 
@@ -181,7 +175,7 @@ public class goToAtriumCafe extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            //doSearch();
+            handleMenuSearch();
         } else {
             super.onBackPressed();
         }

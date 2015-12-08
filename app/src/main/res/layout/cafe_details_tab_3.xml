@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -14,6 +14,7 @@
         android:id="@+id/cafe_details_tab_1">
 
         <TextView
+            android:id="@+id/item_1"
             android:text="@string/cafe_list_category_entrees"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,6 +25,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_2"
+            android:layout_below="@id/item_1"
             android:text="@string/food_court_item_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,6 +37,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_3"
+            android:layout_below="@id/item_2"
             android:text="@string/food_court_item_1_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,6 +49,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_4"
+            android:layout_below="@id/item_3"
             android:text="@string/food_court_item_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,6 +61,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_5"
+            android:layout_below="@id/item_4"
             android:text="@string/food_court_item_2_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,6 +73,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_6"
+            android:layout_below="@id/item_5"
             android:text="@string/food_court_item_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,6 +85,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_7"
+            android:layout_below="@id/item_6"
             android:text="@string/food_court_item_3_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,6 +97,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_8"
+            android:layout_below="@id/item_7"
             android:text="@string/food_court_item_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,6 +109,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_9"
+            android:layout_below="@id/item_8"
             android:text="@string/food_court_item_4_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,6 +121,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_10"
+            android:layout_below="@id/item_9"
             android:text="@string/food_court_item_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,6 +133,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_11"
+            android:layout_below="@id/item_10"
             android:text="@string/food_court_item_5_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,6 +145,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_12"
+            android:layout_below="@id/item_11"
             android:text="@string/food_court_item_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,7 +156,18 @@
             android:textSize="14sp"
             android:textColor="@color/black" />
 
+        <ImageView
+            android:id="@+id/favorites_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_18pt"
+            android:layout_marginEnd="46dp"
+            android:layout_alignBottom="@+id/item_12"
+            android:layout_alignParentEnd="true" />
+
         <TextView
+            android:id="@+id/item_13"
+            android:layout_below="@id/item_12"
             android:text="@string/food_court_item_6_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,6 +178,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_14"
+            android:layout_below="@id/item_13"
             android:text="@string/food_court_item_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -154,6 +190,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_15"
+            android:layout_below="@id/item_14"
             android:text="@string/food_court_item_7_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -162,7 +200,10 @@
             android:layout_marginTop="@dimen/activity_margin_text_half"
             android:textSize="12sp"
             android:textColor="@color/grey"/>
+
         <TextView
+            android:id="@+id/item_16"
+            android:layout_below="@id/item_15"
             android:text="@string/food_court_item_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,6 +214,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_17"
+            android:layout_below="@id/item_16"
             android:text="@string/food_court_item_8_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -183,6 +226,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_18"
+            android:layout_below="@id/item_17"
             android:text="@string/food_court_item_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -193,6 +238,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_19"
+            android:layout_below="@id/item_18"
             android:text="@string/food_court_item_9_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -203,6 +250,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_20"
+            android:layout_below="@id/item_19"
             android:text="@string/food_court_item_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -213,6 +262,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_21"
+            android:layout_below="@id/item_20"
             android:text="@string/food_court_item_10_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -223,6 +274,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_22"
+            android:layout_below="@id/item_21"
             android:text="@string/food_court_item_11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -233,6 +286,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_23"
+            android:layout_below="@id/item_22"
             android:text="@string/food_court_item_11_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -243,6 +298,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_24"
+            android:layout_below="@id/item_23"
             android:text="@string/food_court_item_12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -253,6 +310,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_25"
+            android:layout_below="@id/item_24"
             android:text="@string/food_court_item_12_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -263,6 +322,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_26"
+            android:layout_below="@id/item_25"
             android:text="@string/food_court_item_13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -272,7 +333,17 @@
             android:textSize="14sp"
             android:textColor="@color/black" />
 
+        <ImageView
+            android:id="@+id/favorites_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_18pt"
+            android:layout_alignBottom="@+id/item_26"
+            android:layout_alignStart="@+id/favorites_image1" />
+
         <TextView
+            android:id="@+id/item_27"
+            android:layout_below="@id/item_26"
             android:text="@string/food_court_item_13_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -283,6 +354,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_28"
+            android:layout_below="@id/item_27"
             android:text="@string/food_court_item_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -293,6 +366,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_29"
+            android:layout_below="@id/item_28"
             android:text="@string/food_court_item_14_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -303,6 +378,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_30"
+            android:layout_below="@id/item_29"
             android:text="@string/food_court_item_15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -313,6 +390,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_31"
+            android:layout_below="@id/item_30"
             android:text="@string/food_court_item_15_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -323,6 +402,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_32"
+            android:layout_below="@id/item_31"
             android:text="@string/food_court_item_16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -333,6 +414,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_33"
+            android:layout_below="@id/item_32"
             android:text="@string/food_court_item_16_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -343,6 +426,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_34"
+            android:layout_below="@id/item_33"
             android:text="@string/food_court_item_17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -353,6 +438,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_35"
+            android:layout_below="@id/item_34"
             android:text="@string/food_court_item_17_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -363,6 +450,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_36"
+            android:layout_below="@id/item_35"
             android:text="@string/food_court_item_18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -373,6 +462,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_37"
+            android:layout_below="@id/item_36"
             android:text="@string/food_court_item_18_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -383,6 +474,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_38"
+            android:layout_below="@id/item_37"
             android:text="@string/food_court_item_19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -393,6 +486,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_39"
+            android:layout_below="@id/item_38"
             android:text="@string/food_court_item_19_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -403,6 +498,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_40"
+            android:layout_below="@id/item_39"
             android:text="@string/food_court_item_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -413,6 +510,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_41"
+            android:layout_below="@id/item_40"
             android:text="@string/food_court_item_20_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -423,6 +522,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_42"
+            android:layout_below="@id/item_41"
             android:text="@string/food_court_item_21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -433,6 +534,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_43"
+            android:layout_below="@id/item_42"
             android:text="@string/food_court_item_21_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -443,6 +546,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_44"
+            android:layout_below="@id/item_43"
             android:text="@string/food_court_item_22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -453,6 +558,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_45"
+            android:layout_below="@id/item_44"
             android:text="@string/food_court_item_22_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -463,6 +570,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_46"
+            android:layout_below="@id/item_45"
             android:text="@string/food_court_item_23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -473,6 +582,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_47"
+            android:layout_below="@id/item_46"
             android:text="@string/food_court_item_23_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -483,6 +594,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_48"
+            android:layout_below="@id/item_47"
             android:text="@string/food_court_item_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -493,6 +606,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_49"
+            android:layout_below="@id/item_48"
             android:text="@string/food_court_item_24_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -503,6 +618,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_50"
+            android:layout_below="@id/item_49"
             android:text="@string/food_court_item_25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -513,6 +630,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_51"
+            android:layout_below="@id/item_50"
             android:text="@string/food_court_item_25_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -523,6 +642,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_52"
+            android:layout_below="@id/item_51"
             android:text="@string/food_court_item_26"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -533,6 +654,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_53"
+            android:layout_below="@id/item_52"
             android:text="@string/food_court_item_26_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -543,6 +666,8 @@
             android:textColor="@color/grey"/>
 
         <TextView
+            android:id="@+id/item_54"
+            android:layout_below="@id/item_53"
             android:text="@string/food_court_item_27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -553,6 +678,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_55"
+            android:layout_below="@id/item_54"
             android:text="@string/food_court_item_27_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -566,6 +693,8 @@
         <!-- Last item -->
 
         <TextView
+            android:id="@+id/item_56"
+            android:layout_below="@id/item_55"
             android:text="@string/food_court_item_28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -576,6 +705,8 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/item_57"
+            android:layout_below="@id/item_56"
             android:text="@string/food_court_item_28_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -587,6 +718,6 @@
             android:textColor="@color/grey"/>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>

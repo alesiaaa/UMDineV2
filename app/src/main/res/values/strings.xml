@@ -110,6 +110,19 @@
     <!-- FAQ end-->
 
 
+    <!-- Favorites Start-->
+
+    <string name="favorites_title">Favorites</string>
+
+    <string name="favorites_text1">A place for your favorites bites on campus.</string>
+
+    <string name="favorites_text2">food court item 6</string>
+
+
+    <!-- Favorites end-->
+
+
+
     <!-- Cafe List-->
 
 
@@ -189,7 +202,7 @@
     <string name="food_court_item_3">Garlic Tomatoes</string>
     <string name="food_court_item_3_price">3.00</string>
 
-    <string name="food_court_item_4">Garlic Chicken Tortilas</string>
+    <string name="food_court_item_4">Garlic Chicken Tortillas</string>
     <string name="food_court_item_4_price">5.25</string>
 
     <!--Breakfast Special-->
