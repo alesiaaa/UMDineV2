@@ -181,7 +181,7 @@ public class goToMccormackExpress extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            //doSearch();
+
         } else {
             super.onBackPressed();
         }

@@ -180,7 +180,7 @@ public class goToUniversityClub extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            //doSearch();
+
         } else {
             super.onBackPressed();
         }

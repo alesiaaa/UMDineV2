@@ -181,7 +181,7 @@ public class goToFoodCourt extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            //doSearch();
+
         } else {
             super.onBackPressed();
         }

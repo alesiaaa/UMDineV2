@@ -190,7 +190,7 @@ public class goToWhatsOpenNow extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            //doSearch();
+
         } else {
             super.onBackPressed();
         }

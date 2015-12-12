@@ -183,7 +183,7 @@ public class goToHealeyLibrary extends AppCompatActivity {
 
 
         if(isSearchOpened) {
-            //doSearch();
+
         } else {
             super.onBackPressed();
         }

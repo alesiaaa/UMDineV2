@@ -11,6 +11,9 @@ import android.view.ViewGroup;
  */
 public class cafesFoodCourtTab1 extends Fragment {
 
+    // Create the view for the first tab in Food Court tabbed view
+    // by inflating the layout cafe_details_tab_1
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

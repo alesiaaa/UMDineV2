@@ -191,7 +191,7 @@ public class goToCafeListMain extends AppCompatActivity implements View.OnClickL
 
 
         if(isSearchOpened) {
-            //doSearch();
+
         } else {
             super.onBackPressed();
         }
